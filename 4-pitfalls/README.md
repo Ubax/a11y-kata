@@ -1,31 +1,42 @@
-# 4. Pitfalls for developers and designers
+# 4. Pitfalls for Developers and Designers
 
-In this part of the kata you will learn about common pitfalls that developers and designers make when creating websites. You will learn how to avoid them and how to fix them.
+In this section, you'll explore common accessibility pitfalls that developers and designers often encounter when building websites. You'll learn how to identify these issues, avoid them, and how to fix them.
 
-## 4.1. Alternative text
+You can approach the exercises with varying levels of depth:
 
-## 4.2. Headings
+- Focus on identifying issues and understanding their impact.
+- Dive deeper into the code and attempt to fix the issues.
 
-## 4.3. Links
+## How to Complete the Exercises
 
-## 4.4. Focus
+1. Read the exercise description.
+2. Open the provided link to the website.
+3. Analyze the website and identify the accessibility issues.
+   - If you're having trouble spotting issues, use the provided hints.
+4. List all the accessibility issues related to the exercise.
+5. Compare your findings with the listed problems.
+6. Optionally, try to fix the issues.
+   - If you're stuck, refer to the provided solutions.
 
-## 4.5. Page title
+## Local Setup
 
-## 4.5. Tables
+Each exercise includes links to both online and local versions of the websites. If you want to work on the local versions, especially for exercises that involve code fixes, you'll need to run a local server.
 
-## 4.6. Forms
+To do so, run the following command in this directory:
 
-## 4.7. Color
+```bash
+python -m http.server
+```
 
-## 4.8. Dialogs & popups
+## Exercises
 
-## 4.9. Toasts
-
-## 4.10. Language
-
-## 4.11. Hover/focus
-
-## 4.12. Responsive design
-
-## 4.13. More resources
+- [4.1. Alternative text](4.01-alternative_text/README.md)
+- [4.2. Headings](4.02-headings/README.md)
+- [4.3. Links](4.03-links/README.md)
+- [4.4. Focus](4.04-focus/README.md)
+- [4.5. Page title](4.05-page_title/README.md)
+- [4.6. Tables](4.06-tables/README.md)
+- [4.7. Forms](4.07-forms/README.md)
+- [4.8. Landmarks](4.08-no_landmarks/README.md)
+- [4.9. Dialogs & popups](4.09-dialog_popups/README.md)
+- [4.10. Language](4.10-language/README.md)

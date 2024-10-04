@@ -1,7 +1,0 @@
-- [ ] add slides to introduction
-- [ ] add notes to introduction
-- [ ] add exercises to 2-tools
-- [ ] add exercises to 3-testing
-- [ ] add exercises to 4-pitfalls
-- [ ] add exercises to 5-design_and_code
-- [ ] update README.md with more information
