@@ -5,3 +5,5 @@
 - [ ] add exercises to 4-pitfalls
 - [ ] add exercises to 5-design_and_code
 - [ ] update README.md with more information
+- [ ] check all windows shortcuts
+- [ ] add android/ios shortcuts

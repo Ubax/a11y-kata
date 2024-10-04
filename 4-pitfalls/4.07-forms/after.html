@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An example form withńcommon accessibility and usability issues."
+    />
+    <meta
+      name="keywords"
+      content="accessibility, form issues, usability problems"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form Accessibility Issues</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="exampleForm" novalidate>
+        <h1>Example Form</h1>
+
+        <div class="field-group">
+          <label>Email<span aria-hidden="true">*</span></label>
+          <input type="text" id="email" aria-required="true" />
+          <span class="error">This field is required</span>
+        </div>
+
+        <div class="field-group">
+          <label for="password">
+            Password<span aria-hidden="true">*</span>
+          </label>
+          <input type="password" id="password" aria-required="true" />
+          <span class="error">This field is required</span>
+        </div>
+
+        <div class="field-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" />
+          <span class="error">Passwords do not match</span>
+        </div>
+
+        <div class="field-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" />
+        </div>
+
+        <div class="field-group">
+          <label id="office-days-label">When do you come to the office?</label>
+          <div role="group" class="checkbox-group">
+            <ul aria-labelledby="office-days-label" class="checkbox-group">
+              <li>
+                <label>
+                  <input type="checkbox" name="monday" />
+                  Monday
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="tuesday" />
+                  Tuesday
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="wednesday" />
+                  Wednesday
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="thursday" />
+                  Thursday
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="friday" />
+                  Friday
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label id="gender-list-label">Gender</label>
+          <div
+            aria-labelledby="gender-list-label"
+            role="radiogroup"
+            class="radio-group"
+          >
+            <label>
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Other
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function validateEmail() {
+        const email = document.getElementById("email");
+        if (!email.value) {
+          email.classList.add("error-border");
+          email.nextElementSibling.classList.add("active");
+          email.ariaInvalid = true;
+        } else {
+          email.classList.remove("error-border");
+          email.nextElementSibling.classList.remove("active");
+          email.ariaInvalid = false;
+        }
+      }
+
+      function validatePassword() {
+        const password = document.getElementById("password");
+        if (!password.value) {
+          password.classList.add("error-border");
+          password.nextElementSibling.classList.add("active");
+          password.ariaInvalid = true;
+        } else {
+          password.classList.remove("error-border");
+          password.nextElementSibling.classList.remove("active");
+          password.ariaInvalid = false;
+        }
+      }
+
+      function validateConfirmPassword() {
+        const confirmPassword = document.getElementById("confirmPassword");
+        const password = document.getElementById("password");
+        if (password.value !== confirmPassword.value) {
+          confirmPassword.classList.add("error-border");
+          confirmPassword.nextElementSibling.classList.add("active");
+          confirmPassword.ariaInvalid = true;
+        } else {
+          confirmPassword.classList.remove("error-border");
+          confirmPassword.nextElementSibling.classList.remove("active");
+          confirmPassword.ariaInvalid = false;
+        }
+      }
+
+      function validateForm() {
+        validateEmail();
+        validatePassword();
+        validateConfirmPassword();
+      }
+
+      document
+        .getElementById("exampleForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          validateForm();
+        });
+
+      const email = document.getElementById("email");
+      const password = document.getElementById("password");
+      const confirmPassword = document.getElementById("confirmPassword");
+
+      email.addEventListener("blur", validateEmail);
+
+      password.addEventListener("blur", validatePassword);
+
+      confirmPassword.addEventListener("blur", validateConfirmPassword);
+    </script>
+  </body>
+</html>

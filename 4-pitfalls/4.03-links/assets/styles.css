@@ -1,0 +1,111 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.post {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  border-radius: 8px;
+  width: 125px;
+  height: 125px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+
+.post-title-link {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.post-title-link:hover {
+  text-decoration: underline;
+}
+
+.post-description {
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: hsl(211, 100%, 50%);
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: hsl(290, 100%, 50%);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+footer p {
+  margin: 0;
+}
