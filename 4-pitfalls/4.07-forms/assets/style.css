@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  min-width: min(450px, calc(100vw - 20px));
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.field-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input.error-border {
+  border-color: red;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Checkboxes and radio buttons */
+.checkbox-group,
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: inline-block;
+  /* margin-left: 8px; */
+  font-weight: normal;
+  color: #555;
+}
+
+.checkbox-group ul,
+.radio-group ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.field-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.radio-group label {
+  display: block;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  display: block;
+  float: left;
+}
+.radio-group input[type="radio"] + label,
+.checkbox-group input[type="checkbox"] + label {
+  display: block;
+}
+
+.field-group input[type="checkbox"]:focus,
+.radio-group input[type="radio"]:focus {
+  outline: 2px solid #007bff;
+}
+
+/* Required field indicators (visual cues) */
+.required {
+  color: red;
+  font-size: 14px;
+}
+
+/* Styling for better layout */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.error {
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
