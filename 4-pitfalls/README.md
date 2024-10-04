@@ -4,11 +4,20 @@ In this part of the kata you will learn about common pitfalls that developers an
 
 ## 4.1. Alternative text
 
+- No alt text
+- Too much alt text
+- Empty vs null alt text
+
 ## 4.2. Headings
 
 ## 4.3. Links
 
 ## 4.4. Focus
+
+- outline
+- skip to main content
+- focus order
+- focus traps
 
 ## 4.5. Page title
 
