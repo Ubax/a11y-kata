@@ -10,6 +10,12 @@ This is a repository containing a kata to get basic understanding of accessibili
 
 ## How to use this repository
 
+TODO: Add instructions
+
 ## Improvement ideas
 
+TODO: Add instructions
+
 ## Contact
+
+TODO: Add contact data
