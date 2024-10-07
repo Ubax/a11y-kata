@@ -1,43 +1,91 @@
 # 4.1. Alternative Text
 
-TODO: Add introduction
+In this exercise, your task is to enhance the accessibility of the images on the webpage http://jakubtkacz.pl/a11y/4-1-alternative_text/before.html. You can also open the local version of the page [before.html](./before.html) for reference.
+
+Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
 <details>
-    <summary>Problem 1</summary>
+<summary>Problem 1</summary>
 
-    TODO: Add problem description
-
-    Alt text missing on important images
-</details>
-<details>
-    <summary>Solution for problem XX</summary>
-    TODO: Add solution
-</details>
-
-<details>
-    <summary>Problem 2</summary>
-
-    TODO: Add problem description
-
-    alt="" missing on decorative images
+The first issue is that important images in the article are missing alternative text.
 
 </details>
 <details>
-    <summary>Solution for problem XX</summary>
-    TODO: Add solution
+<summary>Solution for problem 1</summary>
+To resolve this, add alternative text to the significant images in the content. For example:
+
+```html
+...
+<img
+  src="./assets/electric-typewriter.jpg"
+  alt="An electric typewriter with a cleaner design compared to mechanical ones"
+/>
+...
+<img
+  src="./assets/old-keyboard.jpg"
+  alt="A vintage computer keyboard connected to an early PC"
+/>
+...<b>test</b>
+<img
+  src="./assets/ergonomic-keyboard.jpg"
+  alt="A modern ergonomic split keyboard"
+/>
+...
+```
+
 </details>
 
 <details>
-    <summary>Problem 3</summary>
+<summary>Problem 2</summary>
 
-    TODO: Add problem description
-
-    Too long alt text
+The images in the `Buy Your Next Keyboard` section do not require alternative text. They can be considered as [decorative images](https://www.w3.org/WAI/tutorials/images/decorative/), because they illustrate the products mentioned in the adjacent headers.
 
 </details>
 <details>
-    <summary>Solution for problem XX</summary>
-    TODO: Add solution
+<summary>Solution for problem 2</summary>
+For decorative images, use `alt=""` so that screen readers will ignore them. For example:
+
+```html
+...
+<img src="./assets/ergonomic-keyboard.jpg" alt="" />
+...
+<img src="./assets/gaming-keyboard.jpg" alt="" />
+...
+<img src="./assets/wireless.jpg" alt="" />
+...
+```
+
+</details>
+
+<details>
+<summary>Problem 3</summary>
+
+The alternative text for the typewriter image is too long, which may overwhelm users of screen readers.
+
+</details>
+<details>
+<summary>Solution for problem 3</summary>
+Provide a more concise alternative text for the image. For instance:
+
+```html
+...
+<img
+  src="./assets/typewriter.jpg"
+  alt="An old mechanical typewriter with round keys and levers"
+/>
+...
+```
+
 </details>
 
 ## Resources
+
+- [WCAG 2.1 - Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [W3 tutorial on accessible images](https://www.w3.org/WAI/tutorials/images/)
+- [Decorative images](https://www.w3.org/WAI/tutorials/images/decorative/)
+- [alt attribute documentation](https://www.w3schools.com/tags/att_img_alt.asp)
+
+## Image sources
+
+- [Unsplash](https://unsplash.com/)
+- [Electric Typewriter Image](<https://commons.wikimedia.org/wiki/File:IBM_Model_A_typewriter_(1).jpg/>)
