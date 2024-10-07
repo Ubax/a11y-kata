@@ -83,7 +83,7 @@ Provide a more concise alternative text for the image. For instance:
 - [WCAG 2.1 - Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 - [W3 tutorial on accessible images](https://www.w3.org/WAI/tutorials/images/)
 - [Decorative images](https://www.w3.org/WAI/tutorials/images/decorative/)
-- [alt attribute documentation](https://www.w3schools.com/tags/att_img_alt.asp)
+- [alt property documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt)
 
 ## Image sources
 
