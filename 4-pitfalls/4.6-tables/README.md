@@ -9,11 +9,10 @@ TODO: Add introduction
 
     Only div table
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -23,11 +22,10 @@ TODO: Add introduction
 
     Missing table headers
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -37,11 +35,10 @@ TODO: Add introduction
 
     Missing row headers
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -51,11 +48,10 @@ TODO: Add introduction
 
     Complex table, that can be split into multiple tables
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

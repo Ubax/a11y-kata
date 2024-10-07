@@ -9,11 +9,10 @@ TODO: Add introduction
 
     Hover disappears when moving mouse to submenu
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -23,11 +22,10 @@ TODO: Add introduction
 
     There is no way to close the new content
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

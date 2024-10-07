@@ -9,11 +9,10 @@ TODO: Add introduction
 
     Missing `lang` attribute on website
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -23,11 +22,10 @@ TODO: Add introduction
 
     Missing `lang` attribute on specific elements
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

@@ -11,11 +11,10 @@ TODO: Add introduction
 
     Screen reader
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

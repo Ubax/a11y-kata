@@ -8,12 +8,10 @@ TODO: Add introduction
     TODO: Add problem description
 
     Alt text missing on important images
-
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -23,11 +21,10 @@ TODO: Add introduction
 
     alt="" missing on decorative images
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -37,11 +34,10 @@ TODO: Add introduction
 
     Too long alt text
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

@@ -9,11 +9,10 @@ TODO: Add introduction
 
     Text only zoom breaks the website
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 <details>
@@ -23,11 +22,10 @@ TODO: Add introduction
 
     Changing letter spacing, word spacing, line height breaks the website
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem XX</summary>
+    TODO: Add solution
 </details>
 
 ## Resources

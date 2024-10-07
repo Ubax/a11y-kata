@@ -3,60 +3,57 @@
 TODO: Add introduction
 
 <details>
-    <summary>Problem 1</summary>
+<summary>Problem 1</summary>
 
-    TODO: Add problem description
+TODO: Add problem description
 
-    Missing outline on focusable elements
+Missing outline on focusable elements
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem 1</summary>
+    TODO: Add solution
 </details>
 
 <details>
-    <summary>Problem 2</summary>
+<summary>Problem 2</summary>
 
-    TODO: Add problem description
+TODO: Add problem description
 
-    Wrong focus order
+Wrong focus order
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem 2</summary>
+    TODO: Add solution
 </details>
 
 <details>
-    <summary>Problem 3</summary>
+<summary>Problem 3</summary>
 
-    TODO: Add problem description
+TODO: Add problem description
 
-    Focus traps
+Focus traps
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
-    </details>
-
+</details>
+<details>
+    <summary>Solution for problem 3</summary>
+    TODO: Add solution
 </details>
 
 <details>
-    <summary>Problem 4</summary>
+<summary>Problem 4</summary>
 
-    TODO: Add problem description
+TODO: Add problem description
 
-    Focus in side nav
+Focus in side nav
 
-    <details>
-        <summary>Solution</summary>
-        TODO: Add solution
+</details>
+<details>
+    <summary>Solution for problem 4</summary>
+    TODO: Add solution
 
-        https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert
-    </details>
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert
 
 </details>
 
