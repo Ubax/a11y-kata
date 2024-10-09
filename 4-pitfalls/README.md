@@ -16,3 +16,5 @@ In this part of the kata you will learn about common pitfalls that developers an
 - [4.13. Responsive design](4.13-responsive_design/README.md)
 
 ## More resources
+
+TODO: Add resources

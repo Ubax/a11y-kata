@@ -7,7 +7,7 @@ In this part of the kata you will learn how to use tools that:
 
 ## Tasks
 
-There are six tasks in this part of the kata:
+There are six sections in this part of the kata:
 
 - [2.1 - disability simulation](./2.1-disability-simulation.md)
 - [2.2 - keyboard navigation](./2.2-keyboard-navigation.md)
