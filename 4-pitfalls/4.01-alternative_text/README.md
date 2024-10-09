@@ -1,6 +1,6 @@
 # 4.1. Alternative Text
 
-In this exercise, your task is to enhance the accessibility of the images on the webpage http://jakubtkacz.pl/a11y/4-1-alternative_text/before.html. You can also open the local version of the page [before.html](./before.html) for reference.
+In this exercise, your task is to enhance the accessibility of the images on the page [before.html](./before.html).
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
