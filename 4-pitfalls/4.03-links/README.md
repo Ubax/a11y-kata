@@ -1,6 +1,6 @@
 # 4.3. Links
 
-In this exercise, your task is to enhance the accessibility of the links on the page [before.html](./before.html).
+In this exercise, your task is to enhance the accessibility of the links on page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.03-links/before.html) ([code source](./before.html)).
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
