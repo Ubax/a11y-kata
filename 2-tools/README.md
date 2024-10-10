@@ -15,3 +15,8 @@ There are six sections in this part of the kata:
 - [2.4 - switch](./2.4-switch.md)
 - [2.5 - screen magnifier](./2.5-screen-magnifier.md)
 - [2.6 - speech recognition (optional)](./2.6-speech-recognition.md) - only in quiet environment
+
+## Assets
+
+- [form.html](./assets/form.html)
+- [Wikipedia.html](./assets/Wikipedia.html)
