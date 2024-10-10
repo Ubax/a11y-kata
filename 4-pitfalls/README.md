@@ -2,6 +2,11 @@
 
 In this part of the kata you will learn about common pitfalls that developers and designers make when creating websites. You will learn how to avoid them and how to fix them.
 
+You can approach the exercises with different depths:
+
+- You can only focus on finding the issues and considering their effects
+- You can also try to dig deeper into code and try to fix the issues
+
 - [4.1. Alternative text](4.01-alternative_text/README.md)
 - [4.2. Headings](4.02-headings/README.md)
 - [4.3. Links](4.03-links/README.md)
