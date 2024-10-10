@@ -11,7 +11,10 @@ There are six sections in this part of the kata:
 
 - [2.1 - disability simulation](./2.1-disability-simulation.md)
 - [2.2 - keyboard navigation](./2.2-keyboard-navigation.md)
-- [2.3 - screen reader](./2.3-screen-reader.md)
+- 2.3 - screen reader - choose one for desktop and mobile:
+  - [2.3 - Mac](./2.3-screen-reader-mac.md)
+  - [2.3 - Windows](./2.3-screen-reader-windows.md)
+  - [2.3 - Android/iOS](./2.3-screen-reader-mobile.md)
 - [2.4 - switch](./2.4-switch.md)
 - [2.5 - screen magnifier](./2.5-screen-magnifier.md)
 - [2.6 - speech recognition (optional)](./2.6-speech-recognition.md) - only in quiet environment
