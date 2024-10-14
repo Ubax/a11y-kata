@@ -6,12 +6,12 @@ In this task you will learn how to enhance the accessibility of tables. Use a sc
 <summary>Hints (How to use screen reader with tables)</summary>
 
 - Locating tables on the page:
-  - `VO + Command + T` (macOS) or `Control + Alt + T` (Windows) to navigate to the next table.
-  - `VO + U` (macOS) or `Control + Alt + U` (Windows) to open the rotor and then `left/right arrow` to locate tables list
+  - <kbd>VO + Command + T</kbd> (macOS) or <kbd>Control + Alt + T</kbd> (Windows) to navigate to the next table.
+  - <kbd>VO + U</kbd> (macOS) or <kbd>Control + Alt + U</kbd> (Windows) to open the rotor and then <kbd>left/right arrow</kbd> to locate tables list
 - Reading tables:
-  - `VO + Arrows` (macOS) or `Control + Alt + Arrows` (Windows) to navigate through the table cells.
-  - `VO + C` (macOS) or `Control + Alt + C` (Windows) to read the current column header.
-  - `VO + R` (macOS) or `Control + Alt + R` (Windows) to read the current row header.
+  - <kbd>VO + Arrows</kbd> (macOS) or <kbd>Control + Alt + Arrows</kbd> (Windows) to navigate through the table cells.
+  - <kbd>VO + C</kbd> (macOS) or <kbd>Control + Alt + C</kbd> (Windows) to read the current column header.
+  - <kbd>VO + R</kbd> (macOS) or <kbd>Control + Alt + R</kbd> (Windows) to read the current row header.
 
 </details>
 
