@@ -4,6 +4,28 @@ In this exercise, your task is to enhance the accessibility of the links on page
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
+Support tools: 
+- Color simulator
+- Screen reader
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+
+- Try finding the links with colors disabled
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+- Using screen reader try to find the purpose of the links
+
+</details>
+
+## Problems & solutions
+
 <details>
 <summary>Problem 1</summary>
 

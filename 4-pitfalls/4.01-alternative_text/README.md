@@ -4,6 +4,24 @@ In this exercise, your task is to enhance the accessibility of the images on the
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+
+- Check the images on the website with screen reader
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+- Check when the images description is redundant or too long
+
+</details>
+
+## Problems & solutions
+
 <details>
 <summary>Problem 1</summary>
 

@@ -4,12 +4,32 @@ In this exercise, your goal is to improve how focus works on page [before.html](
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 
-<details>
-<summary>Hint (how to start)</summary>
+Support tool: Keyboard navigation
 
-Try using the keyboard to navigate through the page.
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+
+- Navigate in the page using the keyboard and try to find where your focus is
 
 </details>
+
+<details>
+<summary>Hint 2</summary>
+
+- Check the order in which the focus moves through the page
+
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+- Navigate in the page with side menu open and closed
+
+</details>
+
+## Problems & solutions
 
 <details>
 <summary>Problem 1</summary>

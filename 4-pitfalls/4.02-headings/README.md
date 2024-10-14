@@ -4,6 +4,26 @@ In this exercise, your task is to enhance the accessibility of the headings on p
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
+Support tool: Screen reader
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+
+- Try to navigate using headings with a screen reader
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+- Check the logical structure of the headings
+
+</details>
+
+## Problems & solutions
+
 <details>
 <summary>Problem 1</summary>
 
