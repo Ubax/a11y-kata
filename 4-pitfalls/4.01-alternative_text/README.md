@@ -35,17 +35,17 @@ To resolve this, add alternative text to the significant images in the content. 
 ```html
 ...
 <img
-  src="./assets/electric-typewriter.jpg"
+  src="./assets/electric-typewriter.webp"
   alt="An electric typewriter with a cleaner design compared to mechanical ones"
 />
 ...
 <img
-  src="./assets/old-keyboard.jpg"
+  src="./assets/old-keyboard.webp"
   alt="A vintage computer keyboard connected to an early PC"
 />
 ...<b>test</b>
 <img
-  src="./assets/ergonomic-keyboard.jpg"
+  src="./assets/ergonomic-keyboard.webp"
   alt="A modern ergonomic split keyboard"
 />
 ...
@@ -65,11 +65,11 @@ For decorative images, use `alt=""` so that screen readers will ignore them. For
 
 ```html
 ...
-<img src="./assets/ergonomic-keyboard.jpg" alt="" />
+<img src="./assets/ergonomic-keyboard.webp" alt="" />
 ...
-<img src="./assets/gaming-keyboard.jpg" alt="" />
+<img src="./assets/gaming-keyboard.webp" alt="" />
 ...
-<img src="./assets/wireless.jpg" alt="" />
+<img src="./assets/wireless.webp" alt="" />
 ...
 ```
 
@@ -88,7 +88,7 @@ Provide a more concise alternative text for the image. For instance:
 ```html
 ...
 <img
-  src="./assets/typewriter.jpg"
+  src="./assets/typewriter.webp"
   alt="An old mechanical typewriter with round keys and levers"
 />
 ...
@@ -106,4 +106,4 @@ Provide a more concise alternative text for the image. For instance:
 ## Image sources
 
 - [Unsplash](https://unsplash.com/)
-- [Electric Typewriter Image](<https://commons.wikimedia.org/wiki/File:IBM_Model_A_typewriter_(1).jpg/>)
+- [Electric Typewriter Image](<https://commons.wikimedia.org/wiki/File:IBM_Model_A_typewriter_(1).webp/>)
