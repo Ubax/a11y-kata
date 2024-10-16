@@ -6,52 +6,48 @@ You can refer to the [after-1.html](after-1.html) and [after-2.html](after-2.htm
 
 This exercise includes a special solution to all problems. Make sure to check it out after checking individual problems' solutions.
 
-TODO: Add hints
+Support tool: Keyboard navigation
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+
+Try to accept cookies and close the dialog using only the keyboard.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Try to add pizza to order.
+
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Try to add two pizzas to order.
+
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+Try to close the dialog, after adding pizza to order, without using the close button. [Dialog keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
+
+</details>
+
+## Problems & solutions
 
 <details>
 <summary>Problem 1</summary>
-
-When the dialog is opened, the focus is not automatically set to the button inside the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20opens%2C%20focus%20moves%20to%20an%20element%20contained%20in%20the%20dialog)
-
-</details>
-<details>
-<summary>Solution for problem 1</summary>
-
-With the current implementation, the easiest way to focus the button in the dialog is:
-
-1. Add `autofocus` attribute to the button element.
-   ```html
-   <button autofocus class="primary-button" id="accept-cookies">Accept</button>
-   ...
-   <button autofocus class="primary-button" id="close-ingredients">
-     Close
-   </button>
-   ```
-2. Add focus method to `afterOpenDialog`
-   ```diff
-   function afterOpenDialog(dialog) {
-   +  dialog.querySelector("[autofocus]")?.focus();
-   }
-   ```
-
-Alternatively, you can just focus first button in the dialog after opening it.
-
-```diff
-function afterOpenDialog(dialog) {
-+  dialog.querySelector("button")?.focus();
-}
-```
-
-</details>
-
-<details>
-<summary>Problem 2</summary>
 
 Focus is not kept (not trapped) inside the dialog when it is open. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=Like%20non%2Dmodal%20dialogs%2C%20modal%20dialogs%20contain%20their%20tab%20sequence)
 
 </details>
 <details>
-<summary>Solution for problem 2</summary>
+<summary>Solution for problem 1</summary>
 
 To solve this issue we can use the `inert` attribute.
 
@@ -87,13 +83,13 @@ To solve this issue we can use the `inert` attribute.
 </details>
 
 <details>
-<summary>Problem 3</summary>
+<summary>Problem 2</summary>
 
 Focus does not return to the initial point. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20closes%2C%20focus%20returns%20to%20the%20element%20that%20invoked%20the%20dialog)
 
 </details>
 <details>
-<summary>Solution for problem 3</summary>
+<summary>Solution for problem 2</summary>
     
 To solve this issue we need to save the last focused element before opening the dialog and focus it after closing the dialog.
 1. ```js
@@ -111,6 +107,43 @@ To solve this issue we need to save the last focused element before opening the 
 </details>
 
 <details>
+
+<details>
+<summary>Problem 3</summary>
+
+When the dialog is opened, the focus is not automatically set to the button inside the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20opens%2C%20focus%20moves%20to%20an%20element%20contained%20in%20the%20dialog)
+
+</details>
+<details>
+<summary>Solution for problem 3</summary>
+
+With the current implementation, the easiest way to focus the button in the dialog is:
+
+1. Add `autofocus` attribute to the button element.
+   ```html
+   <button autofocus class="primary-button" id="accept-cookies">Accept</button>
+   ...
+   <button autofocus class="primary-button" id="close-ingredients">
+     Close
+   </button>
+   ```
+2. Add focus method to `afterOpenDialog`
+   ```diff
+   function afterOpenDialog(dialog) {
+   +  dialog.querySelector("[autofocus]")?.focus();
+   }
+   ```
+
+Alternatively, you can just focus first button in the dialog after opening it.
+
+```diff
+function afterOpenDialog(dialog) {
++  dialog.querySelector("button")?.focus();
+}
+```
+
+</details>
+
 <summary>Problem 4</summary>
 
 Escape key does not close the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
@@ -171,6 +204,7 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
     }
     ```
 4.  Prevent the escape key from closing the dialog
+
     ```js
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
@@ -187,3 +221,5 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
 
 https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+
+TODO: resources
