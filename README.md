@@ -14,10 +14,9 @@ This repository is designed for self-paced learning. You can go through the exer
 The recommended order of completing the exercises is as follows:
 
 1. Reading through the introduction slide deck
-2. Completing first three exercises in the tool section
-   - 2.1 - disability simulation
-   - 2.2 - keyboard navigation
-   - 2.3 - screen reader
+2. Completing first two exercises in the tool section
+   - 2.1 - keyboard navigation
+   - 2.2 - screen reader
 3. Completing the testing exercises
 4. Completing the pitfalls exercises
 5. (optional if enough time) Completing the rest of the tool exercises
