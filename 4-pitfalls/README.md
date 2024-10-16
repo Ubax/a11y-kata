@@ -7,12 +7,20 @@ You can approach the exercises with different depths:
 - You can only focus on finding the issues and considering their effects
 - You can also try to dig deeper into code and try to fix the issues
 
-TODO: add note about running local server, e.g. `python -m http.server`
+## How to approach
+
+In the exercises there are links to online websites and local versions of them.
+To use the local versions, especially for the exercises that require fixing the code, you need to run a local server.
+
+Run `python -m http.server` in this directory.
+
 TODO: Add links to exercises with links using local server
 
 TODO: Add webpage with steps fixed
 
-TODO: Maybe also mention reading the standards 
+TODO: Maybe also mention reading the standards
+
+## Exercises
 
 - [4.1. Alternative text](4.01-alternative_text/README.md)
 - [4.2. Headings](4.02-headings/README.md)
@@ -21,11 +29,9 @@ TODO: Maybe also mention reading the standards
 - [4.5. Page title](4.05-page_title/README.md)
 - [4.6. Tables](4.06-tables/README.md)
 - [4.7. Forms](4.07-forms/README.md)
+- [4.8. Landmarks](4.08-no_landmarks/README.md)
 - [4.9. Dialogs & popups](4.09-dialogs_popups/README.md)
-- [4.10. Toasts](4.10-toasts/README.md)
-- [4.11. Language](4.11-language/README.md)
-- [4.12. Hover](4.12-hover/README.md)
-- [4.13. Responsive design](4.13-responsive_design/README.md)
+- [4.10. Language](4.10-language/README.md)
 
 ## More resources
 

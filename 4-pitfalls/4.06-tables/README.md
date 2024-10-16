@@ -1,14 +1,13 @@
 # 4.6. Tables
 
-In this task you will learn how to enhance the accessibility of tables. Use a screen reader to read the table content on the page [before.html](./before.html). Your task is to find accessibility issues and propose solutions to fix them.
+In this exercise, your goal is to improve the accessability of the table on [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.06-tables/before.html). ([source code](./before.html)).
 
-TODO: Headings are missing hints, ..
-TODO: Wrong links
-TODO: Hints are missing
-TODO: Add step by step instructions
+Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
+
+## Hints
 
 <details>
-<summary>Hints (How to use screen reader with tables)</summary>
+<summary>Hint (How to use screen reader with tables)</summary>
 
 - Locating tables on the page:
   - <kbd>VO + Command + T</kbd> (macOS) or <kbd>Control + Alt + T</kbd> (Windows) to navigate to the next table.
@@ -19,6 +18,10 @@ TODO: Add step by step instructions
   - <kbd>VO + R</kbd> (macOS) or <kbd>Control + Alt + R</kbd> (Windows) to read the current row header.
 
 </details>
+
+TODO: Hints are missing
+
+## Problems & solutions
 
 <details>
 <summary>Problem 1</summary>
@@ -104,3 +107,5 @@ There are several ways to fix this issue:
 - [Tables tutorial on W3 page](https://www.w3.org/WAI/tutorials/tables/)
 - [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)
 - [`<table>` tag documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+
+TODO: add resources

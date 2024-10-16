@@ -4,7 +4,8 @@ In this exercise, your task is to enhance the accessibility of the links on page
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
-Support tools: 
+Support tools:
+
 - Color simulator
 - Screen reader
 
@@ -20,9 +21,7 @@ Support tools:
 <details>
 <summary>Hint 2</summary>
 
-- Using screen reader try to find the purpose of the links
-
-TODO: Maybe use rotor to find correct link
+- Using screen reader to navigate between links. Can you understand the purpose of each link?
 
 </details>
 
@@ -48,7 +47,7 @@ When users rely on screen readers or speech recognition software, they may not u
 
 </details>
 <details>
-<summary>Solution for problem XX</summary>
+<summary>Solution for problem 2</summary>
 
 There are several ways to address this issue:
 

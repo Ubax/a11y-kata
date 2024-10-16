@@ -14,21 +14,33 @@ Support tools:
 <details>
 <summary>Hint 1</summary>
 
-Using screen reader or WAVE extension, try to list structural elements of the page. TODO:
+Using screen reader or WAVE extension, try to list all landmarks on the page.
 
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-Structural elements .... TODO:
+List of landmarks:
+
+- [`header`](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/banner.html)
+  - [`nav`](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/navigation.html)
+  - [`search`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search)
+- `main` - for the main content of the page
+  - `aside` - for complementary content
+  - `section` - for each section of content
+- `footer` - for the footer of the page
+
+  - `nav` - for the footer navigation
+
+  TODO: links are missing to w3.
 
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-Naming landmarks ... TODO:
+Using screen reader try to navigate between sections and navigation elements. Can you understand the purpose of each?
 
 </details>
 
@@ -52,7 +64,10 @@ Use HTML landmarks to define the structure of the page.
   - `aside` - for complementary content (Fun facts)
   - `section` - for each section of content (Our Pizzas, Our locations)
 - `footer` - for the footer of the page (links, copyright)
+
   - `nav` - for the footer navigation
+
+  TODO: links are missing to w3.
 
 [^1]: The search tag is an element added in year 2023. It is supported in [all modern browsers](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search#browser_compatibility). For older browsers, you can use a `role="search"` attribute on a form element.
 

@@ -6,8 +6,6 @@ Additionally, you can refer to the [after.html](after.html) file to compare your
 
 Support tool: Screen reader
 
-TODO: Hidden headers
-
 TODO: Add step by step instructions
 
 ## Hints
