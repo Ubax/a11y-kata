@@ -30,7 +30,7 @@ TODO: Maybe also mention reading the standards
 - [4.6. Tables](4.06-tables/README.md)
 - [4.7. Forms](4.07-forms/README.md)
 - [4.8. Landmarks](4.08-no_landmarks/README.md)
-- [4.9. Dialogs & popups](4.09-dialogs_popups/README.md)
+- [4.9. Dialogs & popups](4.09-dialog_popups/README.md)
 - [4.10. Language](4.10-language/README.md)
 
 ## More resources
