@@ -1,6 +1,10 @@
 # 4.1. Alternative Text
 
-In this exercise, your task is to enhance the accessibility of the images on the page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.01-alternative_text/before.html) ([code source](./before.html)).
+In this exercise, your task is to enhance the accessibility of the images on the page _before.html_.
+
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.01-alternative_text/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.01-alternative_text/before.html)
+- [source code](./before.html)
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 

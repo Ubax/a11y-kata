@@ -14,8 +14,6 @@ To use the local versions, especially for the exercises that require fixing the 
 
 Run `python -m http.server` in this directory.
 
-TODO: Add links to exercises with links using local server
-
 TODO: Add webpage with steps fixed
 
 TODO: Maybe also mention reading the standards

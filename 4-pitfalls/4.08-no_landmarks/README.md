@@ -1,6 +1,10 @@
 # 4.8. No landmarks
 
-In this exercise, your goal is to improve the html structure page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.08-no_landmarks/before.html) ([code source](./before.html)).
+In this exercise, your goal is to improve the html structure of the page _before.html_.
+
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.08-no_landmarks/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.08-no_landmarks/before.html)
+- [source code](./before.html)
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 

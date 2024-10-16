@@ -1,7 +1,10 @@
 # 4.6. Tables
 
-In this exercise, your goal is to improve the accessability of the table on [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.06-tables/before.html). ([source code](./before.html)).
+In this exercise, your goal is to improve the accessability of the table on the page _before.html_.
 
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.06-tables/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.06-tables/before.html)
+- [source code](./before.html)
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
 ## Hints

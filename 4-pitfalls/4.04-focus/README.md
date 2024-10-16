@@ -1,6 +1,10 @@
 # 4.4. Focus
 
-In this exercise, your goal is to improve how focus works on page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.04-focus/before.html) ([code source](./before.html)).
+In this exercise, your goal is to improve how focus works on the page _before.html_.
+
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.04-focus/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.04-focus/before.html)
+- [source code](./before.html)
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 

@@ -1,6 +1,10 @@
 # 4.5. Page Title
 
-In this exercise, your goal is to improve the accessability of page titles of blog [before](https://ubax.github.io/a11y-kata/4-pitfalls/4.05-page_title/before/index.html) ([code source](./before/index.html)).
+In this exercise, your goal is to improve the accessability of page titles of:
+
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.05-page_title/before/index.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.05-page_title/before/index.html)
+- [source code](./4.05-page_title/before/index.html)
 
 You can refer to the [after](./after/) to compare your solutions.
 

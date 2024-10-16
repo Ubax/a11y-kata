@@ -1,6 +1,10 @@
 # 4.9. Dialogs & popups
 
-In this exercise, your goal is to improve the accessability of the dialog on the page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/before.html) ([source code](./before.html)).
+In this exercise, your goal is to improve the accessability of the dialog on the page _before.html_.
+
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.09-dialog_popups/before.html)
+- [source code](./before.html)
 
 You can refer to the [after-1.html](after-1.html) and [after-2.html](after-2.html) files to compare your solutions.
 
