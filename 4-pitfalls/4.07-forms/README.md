@@ -1,6 +1,6 @@
 # 4.7. Forms
 
-In this exercise, your goal is to improve the accessability of the form on the page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms) ([code source](./before.html)).
+In this exercise, your goal is to improve the accessability of the form on the page [before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/before.html) ([code source](./before.html)).
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 
@@ -26,31 +26,26 @@ Try to locate the form controls using the screen reader.
 <details>
 <summary>Hint 2</summary>
 
-Try to select checkbox using the screen reader.
+Try to select checkboxes and radios using the screen reader.
 
 </details>
 
+<details>
 <details>
 <summary>Hint 3</summary>
-
-Try to select radio buttons using the screen reader.
-
-</details>
-
-<details>
-<summary>Hint 4</summary>
 
 Turn on color blindness simulation in the browser. Then try to locate form controls with errors.
 
 </details>
-<summary>Hint 5</summary>
+<details>
+<summary>Hint 4</summary>
 
-Focus form control with error using screen reader.
+Focus form control with error using screen reader. Is the control announced differently then the control without error?
 
 </details>
 
 <details>
-<summary>Hint 6</summary>
+<summary>Hint 5</summary>
 
 Try to distinguish required form fields using screen reader.
 
@@ -109,6 +104,12 @@ The lack of connection between the form fields and the labels is even more probl
    <label id="office-days-label">When do you come to the office?</label>
    <div role="group" class="checkbox-group">
      <ul aria-labelledby="office-days-label" class="checkbox-group">
+       <li>
+         <label>
+           <input type="checkbox" name="monday" />
+           Monday
+         </label>
+       </li>
        ...
      </ul>
    </div>
@@ -121,6 +122,10 @@ The lack of connection between the form fields and the labels is even more probl
      role="radiogroup"
      class="radio-group"
    >
+     <label>
+       <input type="radio" name="gender" value="male" />
+       Male
+     </label>
      ...
    </div>
    ```
@@ -130,7 +135,7 @@ The lack of connection between the form fields and the labels is even more probl
 <details>
 <summary>Problem 3</summary>
 
-The `Confirm Password` input only displays error message when it is focused. Otherwise the only indication of the problem is a red border around the input. When user has a color blindness, they may not see the red border.
+The `Password` input only displays error message when it is focused. Otherwise the only indication of the problem is a red border around the input. When user has a color blindness, they may not see the red border.
 
 </details>
 <details>
@@ -141,6 +146,13 @@ You can:
 - Always display the error message.
 - Signal the error using other visual cues, like an icon
 
+In the `before.html` file, you need to remove `fancy-error` class from the password's error `span`
+
+```diff
+- <span class="error fancy-error">This field is required</span>
++ <span class="error">This field is required</span>
+```
+
 </details>
 
 <details>
@@ -150,7 +162,7 @@ When there is an error in the input, the screen reader does not announce it as i
 
 </details>
 <details>
-<summary>Solution for problem 5</summary>
+<summary>Solution for problem 4</summary>
 
 Add `aria-invalid="true"` attribute to the input field(s) with an error. For example:
 
@@ -177,10 +189,6 @@ Required fields are only marked with visual cues (`*`). This may be a problem fo
 
 There are at least two solutions to this problem:
 
-- Use `required` attribute on the form field. This will also add browser validation, but it will display a default error message.
-  ```html
-  <input type="password" id="password" required="true" />
-  ```
 - Use `aria-required` attribute on the form field. This will only add the required attribute without the browser validation.
   ```html
   <input type="password" id="password" aria-required="true" />
@@ -189,6 +197,10 @@ There are at least two solutions to this problem:
     ```html
     <label for="password"> Password<span aria-hidden="true">*</span> </label>
     ```
+- Use `required` attribute on the form field. This will also add browser validation, but it will display a default error message.
+  ```html
+  <input type="password" id="password" required="true" />
+  ```
 
 </details>
 
@@ -199,3 +211,5 @@ https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/
 https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/examples/checkbox/
 
 https://www.w3.org/WAI/ARIA/apg/patterns/radio/
+
+TODO: Resources
