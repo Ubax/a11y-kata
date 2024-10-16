@@ -4,6 +4,8 @@ In this exercise, your task is to enhance the accessibility of the images on the
 
 Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
 
+TODO: Add step by step instructions
+
 ## Hints
 
 <details>

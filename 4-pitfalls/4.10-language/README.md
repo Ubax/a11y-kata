@@ -10,6 +10,8 @@ Experiment with different language settings in the html page and screen reader.
 
 ## Hints
 
+TODO:
+
 - zh-hant
 
 ## Problems & Solutions

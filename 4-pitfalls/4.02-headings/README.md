@@ -8,6 +8,8 @@ Support tool: Screen reader
 
 TODO: Hidden headers
 
+TODO: Add step by step instructions
+
 ## Hints
 
 <details>

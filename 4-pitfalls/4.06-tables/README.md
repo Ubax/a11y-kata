@@ -2,6 +2,11 @@
 
 In this task you will learn how to enhance the accessibility of tables. Use a screen reader to read the table content on the page [before.html](./before.html). Your task is to find accessibility issues and propose solutions to fix them.
 
+TODO: Headings are missing hints, ..
+TODO: Wrong links
+TODO: Hints are missing
+TODO: Add step by step instructions
+
 <details>
 <summary>Hints (How to use screen reader with tables)</summary>
 

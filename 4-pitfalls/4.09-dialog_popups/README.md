@@ -6,6 +6,8 @@ You can refer to the [after-1.html](after-1.html) and [after-2.html](after-2.htm
 
 This exercise includes a special solution to all problems. Make sure to check it out after checking individual problems' solutions.
 
+TODO: Add hints
+
 <details>
 <summary>Problem 1</summary>
 

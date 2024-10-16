@@ -22,6 +22,8 @@ Support tools:
 
 - Using screen reader try to find the purpose of the links
 
+TODO: Maybe use rotor to find correct link
+
 </details>
 
 ## Problems & solutions

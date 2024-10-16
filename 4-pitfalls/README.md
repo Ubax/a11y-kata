@@ -7,6 +7,13 @@ You can approach the exercises with different depths:
 - You can only focus on finding the issues and considering their effects
 - You can also try to dig deeper into code and try to fix the issues
 
+TODO: add note about running local server, e.g. `python -m http.server`
+TODO: Add links to exercises with links using local server
+
+TODO: Add webpage with steps fixed
+
+TODO: Maybe also mention reading the standards 
+
 - [4.1. Alternative text](4.01-alternative_text/README.md)
 - [4.2. Headings](4.02-headings/README.md)
 - [4.3. Links](4.03-links/README.md)
