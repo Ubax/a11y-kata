@@ -131,7 +131,6 @@ nav {
   position: absolute;
   width: 15em;
   left: -18em;
-  display: none;
   transition: left 0.5s;
 }
 

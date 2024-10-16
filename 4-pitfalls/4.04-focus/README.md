@@ -58,8 +58,6 @@ Remove the `order` property from the CSS. Using the `order` property can cause t
 </details>
 
 <details>
-
-<details>
 <summary>Problem 3</summary>
 
 When the side menu is hidden, the focus can still go there because it’s still part of the DOM tree.
