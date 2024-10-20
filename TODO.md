@@ -1,6 +1,7 @@
-- [ ] add slides to introduction
-- [ ] add notes to introduction
-- [ ] add exercises to 2-tools
+- [x] add slides to introduction
+- [x] add notes to introduction
+- [x] add exercises to 2-tools
+- [ ] proof read 2.2 - windows
 - [ ] add exercises to 3-testing
 - [ ] add exercises to 4-pitfalls
 - [ ] add exercises to 5-design_and_code
