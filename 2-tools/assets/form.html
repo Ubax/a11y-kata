@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input Types Form</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
     </style>
-</head>
-<body>
-
-<h1>Form with Various Input Types</h1>
-<form action="#" method="post">
-    <div class="form-group">
+  </head>
+  <body>
+    <h1>Form with Various Input Types</h1>
+    <form id="form" method="post">
+      <div class="form-group">
         <label for="text">Text Input:</label>
-        <input type="text" id="text" name="text" placeholder="Enter text">
-    </div>
+        <input type="text" id="text" name="text" placeholder="Enter text" />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="email">Email Input:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
-    </div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="password">Password Input:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-    </div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="number">Number Input:</label>
-        <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter a number">
-    </div>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="100"
+          placeholder="Enter a number"
+        />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="range">Range Input:</label>
-        <input type="range" id="range" name="range" min="1" max="100">
-    </div>
+        <input type="range" id="range" name="range" min="1" max="100" />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="date">Date Input:</label>
-        <input type="date" id="date" name="date">
-    </div>
+        <input type="date" id="date" name="date" />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="time">Time Input:</label>
-        <input type="time" id="time" name="time">
-    </div>
+        <input type="time" id="time" name="time" />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="color">Color Input:</label>
-        <input type="color" id="color" name="color">
-    </div>
+        <input type="color" id="color" name="color" />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="select">Select Input:</label>
         <select id="select" name="select">
-            <option value="">Select an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+          <option value="">Select an option</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
         </select>
-    </div>
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="textarea">Textarea Input:</label>
-        <textarea id="textarea" name="textarea" rows="4" placeholder="Enter additional information"></textarea>
-    </div>
+        <textarea
+          id="textarea"
+          name="textarea"
+          rows="4"
+          placeholder="Enter additional information"
+        ></textarea>
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="checkbox">Checkbox Input:</label>
-        <input type="checkbox" id="checkbox" name="checkbox"> Check me
-    </div>
+        <input type="checkbox" id="checkbox" name="checkbox" /> Check me
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="radio">Radio Input:</label>
-        <input type="radio" id="radio1" name="radio" value="option1"> Option 1<br>
-        <input type="radio" id="radio2" name="radio" value="option2"> Option 2
-    </div>
+        <input type="radio" id="radio1" name="radio" value="option1" /> Option
+        1<br />
+        <input type="radio" id="radio2" name="radio" value="option2" /> Option 2
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <button type="submit">Submit</button>
-    </div>
-</form>
-
-</body>
+      </div>
+    </form>
+  </body>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = {};
+      for (let [key, value] of formData.entries()) {
+        data[key] = value;
+      }
+      alert(`Submitting: ${JSON.stringify(data, null, 2)}`);
+    });
+  </script>
 </html>
