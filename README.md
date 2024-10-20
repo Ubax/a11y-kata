@@ -1,30 +1,30 @@
-# Accessibility kata
+# Accessibility Kata
 
-This is a repository containing a kata to get basic understanding of accessibility. It is split into 4 parts:
+This repository contains a kata designed to provide a basic understanding of accessibility. The exercises are divided into four parts:
 
-- [Part 1 - Introduction](./1-introduction/README.md) - a short presentation introducing the topic
-- [Part 2 - Tools](./2-tools/README.md) - a list of exercises to get familiar with the tools used by people with disabilities
-- [Part 3 - Testing](./2-tools/README.md) - a list of exercises to get familiar with accessibility testing
-- [Part 4 - Pitfalls](./4-pitfalls/README.md) - a list of exercises to realize the accessibility pitfalls
+- [Part 1 - Introduction](./1-introduction/README.md): A short presentation introducing the topic of accessibility.
+- [Part 2 - Tools](./2-tools/README.md): Exercises to help you become familiar with the tools used by people with disabilities.
+- [Part 3 - Testing](./3-testing/README.md): Exercises focused on accessibility testing.
+- [Part 4 - Pitfalls](./4-pitfalls/README.md): Exercises highlighting common accessibility pitfalls.
 
-## How to use this repository
+## How to Use This Repository
 
-This repository is designed for self-paced learning. You can go through the exercises and choose the ones that you find interesting.
+This repository is intended for self-paced learning. You can explore the exercises at your own pace, selecting those that interest you.
 
-The recommended order of completing the exercises is as follows:
+The recommended order for completing the exercises is:
 
-1. Reading through the introduction slide deck
-2. Completing first two exercises in the tool section
-   - 2.1 - keyboard navigation
-   - 2.2 - screen reader
-3. Completing the testing exercises
-4. Completing the pitfalls exercises
-5. (optional if enough time) Completing the rest of the tool exercises
-6. (optional if enough time) Checking the information in resources section(s)
+1. Start with the introduction slide deck.
+2. Complete the first two exercises in the tools section:
+   - 2.1 - Keyboard Navigation
+   - 2.2 - Screen Reader
+3. Move on to the testing exercises.
+4. Continue with the pitfalls exercises.
+5. (Optional, if time allows) Complete the remaining tool exercises.
+6. (Optional, if time allows) Explore the resources section(s) for further information.
 
-## Improvement ideas
+## Improvement Ideas
 
-If you have any ideas on how to improve this repository, please create an issue or a pull request.
+If you have any suggestions for improving this repository, feel free to open an issue or submit a pull request.
 
 ## Contact
 
