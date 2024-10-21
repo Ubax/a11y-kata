@@ -9,4 +9,4 @@ You can find slides in the [slides.pdf](./slides.pdf) file. The notes for the sl
 - Policies & laws - https://www.w3.org/WAI/policies/
 - WCAG 2 - https://www.w3.org/WAI/standards-guidelines/wcag/
 - Accessibility talks - https://www.youtube.com/c/accessibilitytalks
-- A11ycasts - https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7gs
+- A11ycasts - https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g
