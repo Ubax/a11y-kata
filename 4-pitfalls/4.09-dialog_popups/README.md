@@ -1,6 +1,6 @@
 # 4.9. Dialogs & popups
 
-In this exercise, your goal is to improve the accessability of the dialog on the page _before.html_.
+In this exercise, your goal is to improve the accessability of the **dialog** on the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.09-dialog_popups/before.html)
@@ -10,7 +10,11 @@ You can refer to the [after-1.html](after-1.html) and [after-2.html](after-2.htm
 
 This exercise includes a special solution to all problems. Make sure to check it out after checking individual problems' solutions.
 
-Support tool: Keyboard navigation
+If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
+
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-1.html)
+- [Solution after problem 2](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-2.html)
+- [Solution after problem 3](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-3.html)
 
 ## Hints
 
@@ -142,6 +146,7 @@ Alternatively, you can just focus first button in the dialog after opening it.
 
 ```diff
 function afterOpenDialog(dialog) {
+  ...
 +  dialog.querySelector("button")?.focus();
 }
 ```
@@ -223,7 +228,5 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
 
 ## Resources
 
-https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
-
-TODO: resources
+- [Modal Dialog - ARIA Design Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
+- [Dialog element - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)

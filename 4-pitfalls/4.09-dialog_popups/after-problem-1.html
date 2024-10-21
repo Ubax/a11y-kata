@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Ravenna - The Best Pizza in Town</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header>
+      <h1>Ravenna</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </nav>
+      <search>
+        <form method="get">
+          <input
+            type="search"
+            name="search"
+            aria-label="Full page search"
+            placeholder="Search..."
+          />
+        </form>
+      </search>
+    </header>
+
+    <main id="main-content">
+      <section aria-labelledby="our-pizzas">
+        <h2 id="our-pizzas">Our Pizzas</h2>
+        <p>Delicious pizzas made fresh every day.</p>
+        <ul>
+          <li>
+            <img src="./assets/salami.webp" alt="" />
+            <h3>Pepperoni Pizza</h3>
+            <p>Pepperoni, mozzarella cheese, tomato sauce.</p>
+            <button
+              class="add-to-order secondary-button"
+              data-ingredients="Pepperoni, mozzarella cheese, tomato sauce."
+            >
+              Add Pepperoni Pizza to order
+            </button>
+          </li>
+          <li>
+            <img src="./assets/margherita.webp" alt="" />
+            <h3>Margherita Pizza</h3>
+            <p>Fresh basil, mozzarella cheese, tomato sauce.</p>
+            <button
+              class="add-to-order secondary-button"
+              data-ingredients="Fresh basil, mozzarella cheese, tomato sauce."
+            >
+              Add Margherita Pizza to order
+            </button>
+          </li>
+          <li>
+            <img src="./assets/special.webp" alt="" />
+            <h3>Home Pizza</h3>
+            <p>BBQ sauce, chicken, red onion, cilantro.</p>
+            <button
+              class="add-to-order secondary-button"
+              data-ingredients="BBQ sauce, chicken, red onion, cilantro."
+            >
+              Add Home Pizza to order
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="our-locations">
+        <h2 id="our-locations">Our Locations</h2>
+        <p>Come visit us at one of our many locations.</p>
+        <ul>
+          <li>
+            <img src="./assets/old-town.webp" alt="" />
+            <h3>Old town</h3>
+            <p>123 Pizza St, City</p>
+          </li>
+          <li>
+            <img src="./assets/newtown.webp" alt="" />
+            <h3>New town</h3>
+            <p>456 Cheese Ave, City</p>
+          </li>
+          <li>
+            <img src="./assets/main-station.webp" alt="" />
+            <h3>Main station</h3>
+            <p>789 Sauce Blvd, City</p>
+          </li>
+        </ul>
+      </section>
+
+      <aside aria-labelledby="fun-facts">
+        <h2 id="fun-facts">Fun Facts about Pizza</h2>
+        <p>Did you know?</p>
+        <ul>
+          <li>The first pizza was made in Naples, Italy, in 1889.</li>
+          <li>October is National Pizza Month in the United States.</li>
+          <li>Pepperoni is the most popular pizza topping in the U.S.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <nav aria-label="Footer">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Contact</a>
+        <a href="#">Brand</a>
+      </nav>
+      <p>&copy; 2024 Ravenna. All rights reserved.</p>
+    </footer>
+
+    <!-- Cookie Dialog -->
+    <div class="dialog" id="cookie-dialog">
+      <div class="content">
+        <p>This website does not use cookies, to serve you pizza!</p>
+        <button class="primary-button" id="accept-cookies">Accept</button>
+        <button class="secondary-button">I want cookies</button>
+      </div>
+    </div>
+
+    <!-- Ingredients Dialog -->
+    <div class="dialog" id="ingredients-dialog">
+      <div class="content">
+        <p>Pizza added to the order</p>
+        <p id="ingredients-text"></p>
+        <button class="primary-button" id="close-ingredients">Close</button>
+      </div>
+    </div>
+
+    <script>
+      // Show cookie dialog on page load
+      const cookieDialog = document.getElementById("cookie-dialog");
+      const cookieDialogButtons = cookieDialog.querySelectorAll("button");
+
+      function setInertOfContent(value) {
+        Array.from(document.querySelector("body").children)
+          .filter((child) => !child.classList.contains("dialog"))
+          .forEach((element) => {
+            element.inert = value;
+          });
+      }
+
+      function beforeOpenDialog() {}
+
+      function afterOpenDialog(dialog) {
+        setInertOfContent(true);
+      }
+
+      function beforeCloseDialog() {
+        setInertOfContent(false);
+      }
+
+      function afterCloseDialog() {}
+
+      function openDialog(dialog) {
+        beforeOpenDialog();
+        dialog.classList.add("open");
+        afterOpenDialog(dialog);
+      }
+
+      function closeDialog(dialog) {
+        beforeCloseDialog();
+        dialog.classList.remove("open");
+        afterCloseDialog();
+      }
+
+      window.onload = function () {
+        openDialog(cookieDialog);
+      };
+
+      cookieDialogButtons.forEach((btn) =>
+        btn.addEventListener("click", () => {
+          closeDialog(cookieDialog);
+        })
+      );
+
+      // Show ingredients dialog when "Add to order" is clicked
+      const ingredientsDialog = document.getElementById("ingredients-dialog");
+      const ingredientsText = document.getElementById("ingredients-text");
+      const closeIngredientsBtn = document.getElementById("close-ingredients");
+
+      document.querySelectorAll(".add-to-order").forEach((button) => {
+        button.addEventListener("click", function () {
+          const ingredients = this.getAttribute("data-ingredients");
+          ingredientsText.textContent = `Ingredients: ${ingredients}`;
+          openDialog(ingredientsDialog);
+        });
+      });
+
+      closeIngredientsBtn.addEventListener("click", () => {
+        closeDialog(ingredientsDialog);
+      });
+    </script>
+  </body>
+</html>
