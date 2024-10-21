@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#keyboard-navigation,
+#mac {
+  margin-top: 0;
+}
+
+#windows {
+  padding-top: 82px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+kbd {
+  background-color: #ddd;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: monospace;
+}
+p {
+  font-size: 1.1em;
+}
+
+@media print {
+  .pagebreak {
+    page-break-before: always;
+  }
+}
