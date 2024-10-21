@@ -26,10 +26,12 @@ The recommended order for completing the exercises is:
 
 If you are completing this exercise in a group and would like to use one mac, then consider using Multi-output device in Audio MIDI Setup to create an aggregate device. This will allow you to have multiple audio outputs and inputs.
 
-1. Open Audio MIDI Setup
+1. Open `Audio MIDI Setup`
 2. Click on the `+` in the bottom left corner and select `Create Multi-Output Device`
+3. Select the devices you want to include in the aggregate device
+4. Right click on the group and select `Use this device for sound output`
 
-TODO: add more steps
+<video src="./assets/audio-mdi-example.mov" width="70%" controls></video>
 
 [Apple support](https://support.apple.com/guide/audio-midi-setup/play-audio-through-multiple-devices-at-once-ams7c093f372/mac)
 
