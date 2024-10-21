@@ -1,6 +1,6 @@
 # 4.7. Forms
 
-In this exercise, your goal is to improve the accessability of the form on the page _before.html_.
+In this exercise, your goal is to improve the accessability of the **form** on the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.07-forms/before.html)
@@ -8,10 +8,12 @@ In this exercise, your goal is to improve the accessability of the form on the p
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 
-Support tools:
+If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
-- Screen reader
-- Color blindness simulation
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/after-problem-1.html)
+- [Solution after problem 2](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/after-problem-2.html)
+- [Solution after problem 3](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/after-problem-3.html)
+- [Solution after problem 4](https://ubax.github.io/a11y-kata/4-pitfalls/4.07-forms/after-problem-4.html)
 
 ## Hints
 
@@ -34,7 +36,6 @@ Try to select checkboxes and radios using the screen reader.
 
 </details>
 
-<details>
 <details>
 <summary>Hint 3</summary>
 
@@ -60,7 +61,7 @@ Try to distinguish required form fields using screen reader.
 <details>
 <summary>Problem 1</summary>
 
-There is no connection between form fields and labels. Thus screen reader cannot read the label for the form field and announces it as "edit text".
+There is no connection between form fields and labels. Thus screen reader cannot read the label for the form field and announces it as "edit text". [WCAG 3.3.2 - Labels or Instructions](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 
 </details>
 <details>
@@ -69,20 +70,24 @@ There is no connection between form fields and labels. Thus screen reader cannot
 You need to connect the form field with the label. You can do it in three ways:
 
 - Use `for` attribute in the label and `id` attribute in the form field.
-  ```html
-  <label for="name">Name</label> <input type="text" id="name" name="name" />
+  ```diff
+  - <label>Name</label> <input type="text" id="name" name="name" />
+  + <label for="name">Name</label> <input type="text" id="name" name="name" />
   ```
 - Wrap the form field with the label.
-  ```html
-  <label>
-    Name
-    <input type="text" name="name" />
-  </label>
+  ```diff
+  - <label>Name</label> <input type="text" id="name" name="name" />
+  + <label>
+  +  Name
+  +  <input type="text" name="name" />
+  + </label>
   ```
 - Use `aria-labelledby` attribute in the form field.
-  ```html
-  <label id="name-label">Name</label>
-  <input type="text" aria-labelledby="name-label" name="name" />
+  ```diff
+  - <label>Name</label>
+  + <label id="name-label">Name</label>
+  - <input type="text" name="name" />
+  + <input type="text" aria-labelledby="name-label" name="name" />
   ```
 
 </details>
@@ -104,26 +109,29 @@ The lack of connection between the form fields and the labels is even more probl
    </label>
    ```
 2. The group of checkboxes should be connected via list and group
-   ```html
+   ```diff
    <label id="office-days-label">When do you come to the office?</label>
    <div role="group" class="checkbox-group">
-     <ul aria-labelledby="office-days-label" class="checkbox-group">
-       <li>
-         <label>
-           <input type="checkbox" name="monday" />
-           Monday
-         </label>
-       </li>
+   +  <ul aria-labelledby="office-days-label" class="checkbox-group">
+   -  <input type="checkbox" name="monday" />
+   -  <label> Monday </label>
+   +   <li>
+   +     <label>
+   +       <input type="checkbox" name="monday" />
+   +       Monday
+   +     </label>
+   +   </li>
        ...
-     </ul>
+   +  </ul>
    </div>
    ```
 3. The group of radios should be connected to the group label, by using `aria-labelledby` attribute
-   ```html
-   <label id="gender-list-label">Gender</label>
+   ```diff
+   - <label>Gender</label>
+   + <label id="gender-list-label">Gender</label>
    <div
-     aria-labelledby="gender-list-label"
-     role="radiogroup"
+   +  aria-labelledby="gender-list-label"
+   +  role="radiogroup"
      class="radio-group"
    >
      <label>
@@ -139,7 +147,7 @@ The lack of connection between the form fields and the labels is even more probl
 <details>
 <summary>Problem 3</summary>
 
-The `Password` input only displays error message when it is focused. Otherwise the only indication of the problem is a red border around the input. When user has a color blindness, they may not see the red border.
+The `Password` input only displays error message when it is focused. Otherwise the only indication of the problem is a red border around the input. When user has a color blindness, they may not see the red border. [WCAG 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color)
 
 </details>
 <details>
@@ -162,7 +170,7 @@ In the `before.html` file, you need to remove `fancy-error` class from the passw
 <details>
 <summary>Problem 4</summary>
 
-When there is an error in the input, the screen reader does not announce it as invalid.
+When there is an error in the input, the screen reader does not announce it as invalid. [WCAG 3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
 
 </details>
 <details>
@@ -194,26 +202,21 @@ Required fields are only marked with visual cues (`*`). This may be a problem fo
 There are at least two solutions to this problem:
 
 - Use `aria-required` attribute on the form field. This will only add the required attribute without the browser validation.
-  ```html
-  <input type="password" id="password" aria-required="true" />
+  ```diff
+  - <input type="password" id="password" />
+  + <input type="password" id="password" aria-required="true" />
   ```
-  - In this case it may be also useful to wrap `*` with `aria-hidden="true"` attribute to hide it from the screen reader.
-    ```html
-    <label for="password"> Password<span aria-hidden="true">*</span> </label>
-    ```
 - Use `required` attribute on the form field. This will also add browser validation, but it will display a default error message.
-  ```html
-  <input type="password" id="password" required="true" />
+  ```diff
+  - <input type="password" id="password" />
+  + <input type="password" id="password" required="true" />
   ```
 
 </details>
 
 ## Resources
 
-https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/
-
-https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/examples/checkbox/
-
-https://www.w3.org/WAI/ARIA/apg/patterns/radio/
-
-TODO: Resources
+- [W3 Forms tutorial](https://www.w3.org/WAI/tutorials/forms/)
+- [A Guide To Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/)
+- [Checkbox - ARIA Design Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/examples/checkbox/)
+- [Radio - ARIA Design Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/radio/)
