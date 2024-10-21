@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swag Shop</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hamburger">
+        <button id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <h1>Swag Shop</h1>
+      <p>Get your exclusive blog merchandise here!</p>
+    </header>
+
+    <div class="content">
+      <nav class="side-menu active" id="side-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="swag-shop">
+        <div class="grid-container">
+          <a href="#t-shirt" id="t-shirt" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Blog T-Shirt</h2>
+            <p>$25.00</p>
+          </a>
+          <a href="#eco-mug" id="eco-mug" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Eco-Friendly Mug</h2>
+            <p>$15.00</p>
+          </a>
+          <a href="#sticker-pack" id="sticker-pack" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Sticker Pack</h2>
+            <p>$5.00</p>
+          </a>
+          <a href="#notebook" id="notebook" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Notebook</h2>
+            <p>$12.00</p>
+          </a>
+          <a href="#baseball-cap" id="baseball-cap" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Baseball Cap</h2>
+            <p>$20.00</p>
+          </a>
+          <a href="#tote-bag" id="tote-bag" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Tote Bag</h2>
+            <p>$18.00</p>
+          </a>
+          <a href="#laptop-sleeve" id="laptop-sleeve" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Laptop Sleeve</h2>
+            <p>$30.00</p>
+          </a>
+          <a href="#keychain" id="keychain" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Keychain</h2>
+            <p>$8.00</p>
+          </a>
+          <a href="#phone-case" id="phone-case" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Phone Case</h2>
+            <p>$22.00</p>
+          </a>
+          <a href="#travel-mug" id="travel-mug" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Travel Mug</h2>
+            <p>$16.00</p>
+          </a>
+          <a href="#poster" id="poster" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Poster</h2>
+            <p>$10.00</p>
+          </a>
+          <a href="#socks" id="socks" class="grid-item">
+            <img src="./assets/coming-soon.webp" alt="" />
+            <h2>Socks</h2>
+            <p>$12.00</p>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // Toggle menu visibility
+      const sideMenu = document.getElementById("side-menu");
+      const hamburger = document.getElementById("hamburger");
+
+      hamburger.addEventListener("click", () => {
+        sideMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

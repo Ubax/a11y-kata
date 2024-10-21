@@ -1,6 +1,6 @@
 # 4.4. Focus
 
-In this exercise, your goal is to improve how focus works on the page _before.html_.
+In this exercise, your goal is to improve how **focus** works on the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.04-focus/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.04-focus/before.html)
@@ -8,28 +8,31 @@ In this exercise, your goal is to improve how focus works on the page _before.ht
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 
-Support tool: Keyboard navigation
+If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
+
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.04-focus/after-problem-1.html)
+- [Solution after problem 2](https://ubax.github.io/a11y-kata/4-pitfalls/4.04-focus/after-problem-2.html)
 
 ## Hints
 
 <details>
 <summary>Hint 1</summary>
 
-- Navigate in the page using the keyboard and try to find where your focus is
+Navigate in the page using the keyboard. Can you see where the focus is?
 
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-- Check the order in which the focus moves through the page
+Navigate in the page using the keyboard. Is the focus order logical?
 
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-- Navigate in the page with side menu open and closed
+Navigate in the page using keyboard, with side menu open and closed
 
 </details>
 
@@ -38,39 +41,39 @@ Support tool: Keyboard navigation
 <details>
 <summary>Problem 1</summary>
 
-Focusable elements don’t have an outline or a visual indicator when they receive focus. This makes it hard for keyboard users to know where they are on the page.
+Focusable elements don’t have an outline or a visual indicator when they receive focus. This makes it hard for keyboard users to know where they are on the page. [WCAG 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible)
 
 </details>
 <details>
 <summary>Solution for problem 1</summary>
 
-In the `<style>` block, remove the `outline: none;` property.
+Remove `outline: none;` from the `<style>` block to ensure focus is visibly highlighted.
 
 </details>
 
 <details>
 <summary>Problem 2</summary>
 
-Visual order is modified vis CSS. The focus order follows the structure of the DOM tree. If CSS changes this order, it can confuse keyboard users.
+CSS is altering the visual order, but the focus follows the DOM structure, causing confusion for keyboard users. [WCAG 2.4.3 Focus Order](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 
 </details>
 <details>
 <summary>Solution for problem 2</summary>
 
-Remove the `order` property from the CSS. Using the `order` property can cause the visual order to not match the logical order, making navigation harder. Learn more on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items#the_order_property_and_accessibility).
+Remove the `order` property from the CSS to ensure the visual and focus order align. Learn more on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items#the_order_property_and_accessibility).
 
 </details>
 
 <details>
 <summary>Problem 3</summary>
 
-When the side menu is hidden, the focus can still go there because it’s still part of the DOM tree.
+When the side menu is hidden, focus can still navigate to it because it remains in the DOM.
 
 </details>
 <details>
 <summary>Solution for problem 3</summary>
 
-Here are two possible solutions:
+Two possible solutions:
 
 1. Using the [`inert`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert) attribute
    ```js
