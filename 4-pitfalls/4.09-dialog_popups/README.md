@@ -1,14 +1,12 @@
-# 4.9. Dialogs & popups
+# 4.9. Dialogs & Popups
 
-In this exercise, your goal is to improve the accessability of the **dialog** on the page _before.html_.
+In this exercise, your goal is to improve the accessibility of the **dialogs** on the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.09-dialog_popups/before.html)
 - [source code](./before.html)
 
-You can refer to the [after-1.html](after-1.html) and [after-2.html](after-2.html) files to compare your solutions.
-
-This exercise includes a special solution to all problems. Make sure to check it out after checking individual problems' solutions.
+You can compare your solutions with the provided examples in [after-1.html](after-1.html) and [after-2.html](after-2.html). There is also a final solution that fixes all issues.
 
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
@@ -21,56 +19,55 @@ If you prefer not to solve the problems yourself, you can use the solution files
 <details>
 <summary>Hint 1</summary>
 
-Try to accept cookies and close the dialog using only the keyboard.
+Try accepting cookies and closing the dialog using only the keyboard.
 
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-Try to add pizza to order.
+Try adding a pizza to the order.
 
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-Try to add two pizzas to order.
+Try adding two pizzas to the order.
 
 </details>
 
 <details>
 <summary>Hint 4</summary>
 
-Try to close the dialog, after adding pizza to order, without using the close button. [Dialog keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
+Try closing the dialog after adding a pizza without using the close button. [Dialog keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
 
 </details>
 
-## Problems & solutions
+## Problems & Solutions
 
 <details>
 <summary>Problem 1</summary>
 
-Focus is not kept (not trapped) inside the dialog when it is open. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=Like%20non%2Dmodal%20dialogs%2C%20modal%20dialogs%20contain%20their%20tab%20sequence)
+When the dialog is open, the focus is not kept (trapped) inside it. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=Like%20non%2Dmodal%20dialogs%2C%20modal%20dialogs%20contain%20their%20tab%20sequence)
 
 </details>
 <details>
 <summary>Solution for problem 1</summary>
 
-To solve this issue we can use the `inert` attribute.
+Use the `inert` attribute to trap focus.
 
-1. Add a function to modify the `inert` attribute of all elements outside the dialog.
+1. Create a function to set the `inert` attribute on all elements outside the dialog.
    ```js
    function setInertOfContent(value) {
-     Array.from(document.querySelector("body").children)
-       .filter((child) => !child.classList.contains("dialog"))
+     Array.from(document.querySelector("body").children) // Get all children of the body
+       .filter((child) => !child.classList.contains("dialog")) // Filter out the dialog
        .forEach((element) => {
-         element.inert = value;
+         element.inert = value; // Set the inert attribute
        });
    }
    ```
-2. Add `inert` attribute to all elements outside the dialog when the dialog is open.
-
+2. Add the `inert` attribute when the dialog opens.
    ```js
    function afterOpenDialog(dialog) {
         ...
@@ -78,8 +75,7 @@ To solve this issue we can use the `inert` attribute.
         ...
     }
    ```
-
-3. Remove `inert` attribute from all elements outside the dialog when the dialog is closed.
+3. Remove the `inert` attribute when the dialog closes.
    ```js
    function beforeCloseDialog() {
         ...
@@ -93,41 +89,43 @@ To solve this issue we can use the `inert` attribute.
 <details>
 <summary>Problem 2</summary>
 
-Focus does not return to the initial point. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20closes%2C%20focus%20returns%20to%20the%20element%20that%20invoked%20the%20dialog)
+When the dialog closes, focus doesn't return to the element that triggered it. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20closes%2C%20focus%20returns%20to%20the%20element%20that%20invoked%20the%20dialog)
 
 </details>
 <details>
 <summary>Solution for problem 2</summary>
-    
-To solve this issue we need to save the last focused element before opening the dialog and focus it after closing the dialog.
-1. ```js
-    let lastElementWithFocus = null;
-    ...
-    function beforeOpenDialog() {
-        lastElementWithFocus = document.activeElement;
-    }
-    ```
-2. ```js
-    function afterCloseDialog() {
-        lastElementWithFocus?.focus();
-    }
-    ```
-</details>
 
-<details>
+1. Save the last focused element before opening the dialog.
+   ```js
+   let lastElementWithFocus = null;
+   function beforeOpenDialog() {
+     lastElementWithFocus = document.activeElement;
+   }
+   ```
+2. Restore focus after closing the dialog.
+   ```js
+   function afterCloseDialog() {
+     lastElementWithFocus?.focus();
+   }
+   ```
+
+</details>
 
 <details>
 <summary>Problem 3</summary>
 
-When the dialog is opened, the focus is not automatically set to the button inside the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20opens%2C%20focus%20moves%20to%20an%20element%20contained%20in%20the%20dialog)
+When the dialog opens, focus is not automatically set inside it. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#:~:text=When%20a%20dialog%20opens%2C%20focus%20moves%20to%20an%20element%20contained%20in%20the%20dialog)
 
 </details>
 <details>
 <summary>Solution for problem 3</summary>
 
-With the current implementation, the easiest way to focus the button in the dialog is:
+You can either:
 
-1. Add `autofocus` attribute to the button element.
+1. Use `autofocus`
+
+   - Add the `autofocus` attribute to the button inside the dialog.
+
    ```html
    <button autofocus class="primary-button" id="accept-cookies">Accept</button>
    ...
@@ -135,33 +133,35 @@ With the current implementation, the easiest way to focus the button in the dial
      Close
    </button>
    ```
-2. Add focus method to `afterOpenDialog`
+
+   - Add focus method to `afterOpenDialog`
+
    ```diff
    function afterOpenDialog(dialog) {
    +  dialog.querySelector("[autofocus]")?.focus();
    }
    ```
 
-Alternatively, you can just focus first button in the dialog after opening it.
-
-```diff
-function afterOpenDialog(dialog) {
-  ...
-+  dialog.querySelector("button")?.focus();
-}
-```
+2. Alternatively, focus the first button after opening the dialog.
+   ```diff
+   function afterOpenDialog(dialog) {
+     ...
+   +  dialog.querySelector("button")?.focus();
+   }
+   ```
 
 </details>
 
+<details>
 <summary>Problem 4</summary>
 
-Escape key does not close the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
+The escape key should close the dialog. [Specification](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
 
 </details>
 <details>
 <summary>Solution for problem 4</summary>
 
-Add a function to close the dialog when the escape key is pressed. However we don't want to close the dialog when the cookie dialog is open.
+Add a keydown event listener to close the dialog on Escape, but prevent it from closing the cookie dialog.
 
 ```js
 document.addEventListener("keydown", (event) => {
@@ -180,7 +180,7 @@ document.addEventListener("keydown", (event) => {
 <details>
 <summary>Solution to all above problems</summary>
 
-Most of this issues can be solved by using html [`dialog`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) element. It simplifies the structure of the code and makes the custom logic unnecessary.
+Switching to the native HTML [`dialog`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) element simplifies solving all these issues.
 
 1.  Change the `div` element to `dialog`
     ```diff
@@ -194,7 +194,7 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
     + </dialog>
     ...
     ```
-2.  Use [`showModal`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) function to open the dialog
+2.  Use the [`showModal`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) function to open the dialog
     ```diff
     function openDialog(dialog) {
         ...
@@ -203,7 +203,7 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
         ...
     }
     ```
-3.  Use [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close) function to close the dialog
+3.  Use the [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close) function to close the dialog
     ```diff
     function closeDialog(dialog) {
         ...
@@ -212,8 +212,7 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
         ...
     }
     ```
-4.  Prevent the escape key from closing the dialog
-
+4.  Prevent Escape key from closing the dialog
     ```js
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
@@ -224,7 +223,7 @@ Most of this issues can be solved by using html [`dialog`](https://developer.moz
     });
     ```
 
-    </details>
+</details>
 
 ## Resources
 
