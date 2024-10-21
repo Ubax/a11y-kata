@@ -1,6 +1,6 @@
 # 4.10. Language
 
-In this exercise, your goal is to improve the language accessibility of the page _before.html_.
+The goal of this exercise is to improve the **language** accessibility of the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.10-language/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.10-language/before.html)
@@ -26,7 +26,7 @@ Experiment with different language settings in screen reader.
 <details>
 <summary>Hint 2</summary>
 
-繁體中文 is `zh-hant` language.
+繁體中文 corresponds to the `zh-hant` language code.
 
 </details>
 
@@ -54,7 +54,7 @@ Add the `lang` attribute to the `html` element. The value should be the language
 <details>
 <summary>Problem 2</summary>
 
-Missing `lang` attribute on specific elements. [WCAG 3.1.2 Language of Parts](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
+Some elements with text in a different language are missing a `lang` attribute. This makes it difficult for screen readers to switch languages correctly. [WCAG 3.1.2 Language of Parts](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 
 </details>
 <details>
