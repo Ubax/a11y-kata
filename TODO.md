@@ -3,8 +3,7 @@
 - [x] add exercises to 2-tools
 - [ ] proof read 2.2 - windows
 - [x] add exercises to 3-testing
-- [ ] add exercises to 4-pitfalls
-- [ ] add exercises to 5-design_and_code
+- [x] add exercises to 4-pitfalls
 - [x] update README.md with more information
 - [ ] check all windows shortcuts
 - [x] add android/ios shortcuts
