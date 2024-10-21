@@ -79,7 +79,7 @@ Change the `h5` tags used as product names to `h3` tags.
 
 ## Resources
 
-- [W3 tutorial on accessible headings](https://www.w3.org/WAI/tutorials/page-structure/headings/)
+- [W3C tutorial on accessible headings](https://www.w3.org/WAI/tutorials/page-structure/headings/)
 - [Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 - [Success Criterion 2.4.6: Headings and Labels](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 - [Success Criterion 2.4.10: Section Headings (AAA)](https://www.w3.org/WAI/WCAG21/Understanding/section-headings.html)

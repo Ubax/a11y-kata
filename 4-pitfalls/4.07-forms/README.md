@@ -216,7 +216,7 @@ There are at least two solutions to this problem:
 
 ## Resources
 
-- [W3 Forms tutorial](https://www.w3.org/WAI/tutorials/forms/)
+- [W3C Forms tutorial](https://www.w3.org/WAI/tutorials/forms/)
 - [A Guide To Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/)
 - [Checkbox - ARIA Design Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/examples/checkbox/)
 - [Radio - ARIA Design Patterns](https://www.w3.org/WAI/ARIA/apg/patterns/radio/)

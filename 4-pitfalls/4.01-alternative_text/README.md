@@ -127,7 +127,7 @@ Provide a more concise alternative text for the image. For instance:
 ## Resources
 
 - [WCAG 2.1 - Success Criteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-- [W3 tutorial on accessible images](https://www.w3.org/WAI/tutorials/images/)
+- [W3C tutorial on accessible images](https://www.w3.org/WAI/tutorials/images/)
 - [Decorative images](https://www.w3.org/WAI/tutorials/images/decorative/)
 - [Write helpful Alt Text - Harvard Accessibility](https://accessibility.huit.harvard.edu/describe-content-images)
 - [alt property - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt)
