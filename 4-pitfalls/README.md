@@ -1,22 +1,32 @@
-# 4. Pitfalls for developers and designers
+# 4. Pitfalls for Developers and Designers
 
-In this part of the kata you will learn about common pitfalls that developers and designers make when creating websites. You will learn how to avoid them and how to fix them.
+In this section, you'll explore common accessibility pitfalls that developers and designers often encounter when building websites. You'll learn how to identify these issues, avoid them, and how to fix them.
 
-You can approach the exercises with different depths:
+You can approach the exercises with varying levels of depth:
 
-- You can only focus on finding the issues and considering their effects
-- You can also try to dig deeper into code and try to fix the issues
+- Focus on identifying issues and understanding their impact.
+- Dive deeper into the code and attempt to fix the issues.
 
-## How to approach
+## How to Complete the Exercises
 
-In the exercises there are links to online websites and local versions of them.
-To use the local versions, especially for the exercises that require fixing the code, you need to run a local server.
+1. Read the exercise description.
+2. Open the provided link to the website.
+3. Analyze the website and identify the accessibility issues.
+   - If you're having trouble spotting issues, use the provided hints.
+4. List all the accessibility issues related to the exercise.
+5. Compare your findings with the listed problems.
+6. Optionally, try to fix the issues.
+   - If you're stuck, refer to the provided solutions.
 
-Run `python -m http.server` in this directory.
+## Local Setup
 
-TODO: Add webpage with steps fixed
+Each exercise includes links to both online and local versions of the websites. If you want to work on the local versions, especially for exercises that involve code fixes, you'll need to run a local server.
 
-TODO: Maybe also mention reading the standards
+To do so, run the following command in this directory:
+
+```bash
+python -m http.server
+```
 
 ## Exercises
 
@@ -30,7 +40,3 @@ TODO: Maybe also mention reading the standards
 - [4.8. Landmarks](4.08-no_landmarks/README.md)
 - [4.9. Dialogs & popups](4.09-dialog_popups/README.md)
 - [4.10. Language](4.10-language/README.md)
-
-## More resources
-
-TODO: Add resources
