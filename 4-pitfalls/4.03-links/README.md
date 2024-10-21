@@ -1,31 +1,33 @@
 # 4.3. Links
 
-In this exercise, your task is to enhance the accessibility of the links on the page _before.html_.
+In this exercise, your task is to improve the accessibility of the **links** on the page _before.html_.
 
 - [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.03-links/before.html)
 - [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.03-links/before.html)
 - [source code](./before.html)
 
-Additionally, you can refer to the [after.html](after.html) file to compare your solutions.
-
-Support tools:
-
-- Color simulator
-- Screen reader
+You can refer to the [after.html](after.html) file to compare your solutions.
 
 ## Hints
 
 <details>
 <summary>Hint 1</summary>
 
-- Try finding the links with colors disabled
+Disable colors in your browser and try to identify the links.
+
+Refer to [2.3 Disability simulation - Color blindness](../../2-tools/2.3-disability-simulation.md#exercise-1-simulating-color-blindness) for instructions on how to disable colors in the browser.
 
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-- Using screen reader to navigate between links. Can you understand the purpose of each link?
+Use a screen reader to navigate through the links. Can you tell what each link does?
+
+- Mac: <kbd>Ctrl + Option + Cmd + L</kbd>
+- Windows: <kbd>K</kbd>
+- Android: <kbd>Swipe up + down</kbd> to select links, then <kbd>Swipe down</kbd>
+- iOS: <kbd>Twist</kbd> to select links, then <kbd>Swipe down</kbd>
 
 </details>
 
@@ -34,37 +36,40 @@ Support tools:
 <details>
 <summary>Problem 1</summary>
 
-The first issue is that links are only highlighted by color. This can pose challenges for users with color blindness or low vision, as they may struggle to distinguish the links from the surrounding text.
+Links are only highlighted by color, making it hard for users with color blindness to distinguish them from the surrounding text. [WCAG Failure 73](https://www.w3.org/WAI/WCAG21/Techniques/failures/F73)
 
 </details>
 <details>
 <summary>Solution for problem 1</summary>
 
-Remove `style="text-decoration: none; cursor: default"` from the links. It’s essential to provide a non-color visual indicator for links, such as underlining or changing the text style.
+Remove `style="text-decoration: none; cursor: default"` from the links. Use a non-color visual cue, like underlining, to indicate links.
 
 </details>
 
 <details>
 <summary>Problem 2</summary>
 
-When users rely on screen readers or speech recognition software, they may not understand the purpose of a link if the link text is not descriptive. This lack of clarity makes it difficult for these users to navigate effectively.
+For users relying on screen readers or speech recognition, non-descriptive link text such as "Read more" doesn’t convey the purpose of the link, making navigation difficult. While this primarily affects AAA compliance (as per [WCAG 2.4.9](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html)), it is still important to address.
+
+For AA compliance, the purpose of the link must be understandable from its context ([WCAG 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context)). However, in cases where the link text is separated from its surrounding context (e.g., not in the same paragraph), this issue can also be considered a failure under AA compliance, specifically WCAG Failure 63.
 
 </details>
 <details>
 <summary>Solution for problem 2</summary>
 
-There are several ways to address this issue:
+There are a few ways to fix this:
 
-- Change the link text to be more descriptive, such as using "Read more about the rise of the internet" instead of just "Read more."
-- Use the `aria-label` attribute to provide a more descriptive label for the link, for example: `<a href="..." aria-label="Read more about the rise of the internet">Read more</a>`.
-- Wrap the post title in a link and add an `aria-hidden="true"` attribute to the "Read more" link, like this: `<a ...><h2 class="post-title">The Evolution of the Keyboard</h2></a>`.
+- Change the link text to be more descriptive, e.g., "Read more about the rise of the internet" instead of just "Read more."
+- Add an `aria-label` to provide extra context, like `<a href="..." aria-label="Read more about the rise of the internet">Read more</a>`.
+- Wrap the post title in a link and add `aria-hidden="true"` to the "Read more" link, e.g., `<a ...><h2 class="post-title">The Evolution of the Keyboard</h2></a>`.
 
-You can see examples of each solution in the [after.html](./after.html) file.
+You can find examples in the [after.html](./after.html) file.
 
 </details>
 
 ## Resources
 
+- [WCAG 1.4.1 Use of Color](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color)
 - [WCAG 2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context)
 - [WCAG 2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only)
 - [How to use aria-label on link](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8)
