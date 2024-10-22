@@ -11,6 +11,8 @@ You can compare your solution with the [after.html](after.html) file.
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.08-no_landmarks/after-problem-1.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.08-no_landmarks/after.html)
+
 
 ## Hints
 

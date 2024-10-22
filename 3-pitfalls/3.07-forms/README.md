@@ -14,6 +14,7 @@ If you prefer not to solve the problems yourself, you can use the solution files
 - [Solution after problem 2](https://ubax.github.io/a11y-kata/3-pitfalls/3.07-forms/after-problem-2.html)
 - [Solution after problem 3](https://ubax.github.io/a11y-kata/3-pitfalls/3.07-forms/after-problem-3.html)
 - [Solution after problem 4](https://ubax.github.io/a11y-kata/3-pitfalls/3.07-forms/after-problem-4.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.07-forms/after.html)
 
 ## Hints
 
@@ -26,12 +27,15 @@ Try to locate the form controls using a screen reader:
 - Windows: <kbd>F</kbd>
 - Android: <kbd>Swipe up + down</kbd> to select form fields navigation, then <kbd>swipe down/up</kbd>.
 - iOS: <kbd>Twisting</kbd> to select form fields navigation, then <kbd>Swipe down/up</kbd>.
+
+Can you understand what is the name of the field?
+
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-Try selecting checkboxes and radio buttons using a screen reader.
+Try selecting checkboxes and radio buttons using a screen reader. Can you hear the names for each option?
 
 </details>
 

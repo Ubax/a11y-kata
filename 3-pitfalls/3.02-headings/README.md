@@ -11,6 +11,7 @@ You can refer to the [after.html](after.html) file to compare your solutions.
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.02-headings/after-problem-1.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.02-headings/after.html)
 
 ## Hints
 

@@ -11,6 +11,7 @@ You can refer to the [after.html](after.html) file to compare your solutions.
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.10-language/after-problem-1.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.10-language/after.html)
 
 ## Hints
 
@@ -25,6 +26,15 @@ Experiment with different language settings in screen reader.
 
 <details>
 <summary>Hint 2</summary>
+
+Read the `Author's note` or `In anderen Sprache` section with a screen reader.
+
+Experiment with different language settings in screen reader. Does the screen reader read the content in the correct language?
+
+</details>
+
+<details>
+<summary>Hint 3</summary>
 
 繁體中文 corresponds to the `zh-hant` language code.
 

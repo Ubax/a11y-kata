@@ -11,6 +11,7 @@ You can refer to the [after.html](after.html) file to compare your solutions.
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.03-links/after-problem-1.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.03-links/after.html)
 
 ## Hints
 
@@ -53,9 +54,7 @@ Remove `style="text-decoration: none; cursor: default"` from the links. Use a no
 <details>
 <summary>Problem 2</summary>
 
-For users relying on screen readers or speech recognition, non-descriptive link text such as "Read more" doesn’t convey the purpose of the link, making navigation difficult. While this primarily affects AAA compliance (as per [WCAG 2.4.9](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html)), it is still important to address.
-
-For AA compliance, the purpose of the link must be understandable from its context ([WCAG 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context)). However, in cases where the link text is separated from its surrounding context (e.g., not in the same paragraph), this issue can also be considered a failure under AA compliance, specifically WCAG Failure 63.
+For users relying on screen readers or speech recognition, non-descriptive link text such as "Read more" doesn’t convey the purpose of the link, making navigation difficult. [WCAG 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context), [WCAG 2.4.9](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only).
 
 </details>
 <details>

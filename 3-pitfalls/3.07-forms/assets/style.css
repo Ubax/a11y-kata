@@ -38,7 +38,7 @@ input[type="password"],
 input[type="tel"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   border-radius: 4px;
   font-size: 16px;
   margin-bottom: 6px;

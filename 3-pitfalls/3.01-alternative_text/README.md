@@ -12,6 +12,7 @@ If you prefer not to solve the problems yourself, you can use the solution files
 
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/after-problem-1.html)
 - [Solution after problem 2](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/after-problem-2.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/after.html)
 
 ## Hints
 

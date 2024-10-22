@@ -13,6 +13,7 @@ If you prefer not to solve the problems yourself, you can use the solution files
 - [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-1.html)
 - [Solution after problem 2](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-2.html)
 - [Solution after problem 3](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-3.html)
+- [Solution after all problems](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-1.html)
 
 ## Hints
 
@@ -26,19 +27,12 @@ Try accepting cookies and closing the dialog using only the keyboard.
 <details>
 <summary>Hint 2</summary>
 
-Try adding a pizza to the order.
-
-</details>
-
-<details>
-<summary>Hint 3</summary>
-
 Try adding two pizzas to the order.
 
 </details>
 
 <details>
-<summary>Hint 4</summary>
+<summary>Hint 3</summary>
 
 Try closing the dialog after adding a pizza without using the close button. [Dialog keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboardinteraction)
 
