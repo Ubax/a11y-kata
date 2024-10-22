@@ -1,5 +1,9 @@
 # 2. Accessibility tools
 
+TODO: Rewrite the introduction
+
+TODO: Combine 2 and 3. Change order. First testing then tools.
+
 In this part of the kata you will learn how to use tools that:
 
 - simulate different types of disabilities
