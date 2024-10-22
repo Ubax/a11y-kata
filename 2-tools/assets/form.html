@@ -26,95 +26,101 @@
     </style>
   </head>
   <body>
-    <h1>Form with Various Input Types</h1>
+    <h1>Personal Information Form</h1>
     <form id="form" method="post">
       <div class="form-group">
-        <label for="text">Text Input:</label>
-        <input type="text" id="text" name="text" placeholder="Enter text" />
+        <label for="text">Full Name:</label>
+        <input
+          type="text"
+          id="text"
+          name="name"
+          placeholder="Enter your full name"
+        />
       </div>
 
       <div class="form-group">
-        <label for="email">Email Input:</label>
+        <label for="email">Email Address:</label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Enter your email"
+          placeholder="Enter your email address"
         />
       </div>
 
       <div class="form-group">
-        <label for="password">Password Input:</label>
+        <label for="password">Create a Password:</label>
         <input
           type="password"
           id="password"
           name="password"
-          placeholder="Enter your password"
+          placeholder="Create a password"
         />
       </div>
 
       <div class="form-group">
-        <label for="number">Number Input:</label>
+        <label for="number">Age:</label>
         <input
           type="number"
           id="number"
-          name="number"
+          name="age"
           min="1"
           max="100"
-          placeholder="Enter a number"
+          placeholder="Enter your age"
         />
       </div>
 
       <div class="form-group">
-        <label for="range">Range Input:</label>
-        <input type="range" id="range" name="range" min="1" max="100" />
+        <label for="range">Satisfaction Level (1-100):</label>
+        <input type="range" id="range" name="satisfaction" min="1" max="100" />
       </div>
 
       <div class="form-group">
-        <label for="date">Date Input:</label>
-        <input type="date" id="date" name="date" />
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="dob" />
       </div>
 
       <div class="form-group">
-        <label for="time">Time Input:</label>
+        <label for="time">Preferred Contact Time:</label>
         <input type="time" id="time" name="time" />
       </div>
 
       <div class="form-group">
-        <label for="color">Color Input:</label>
+        <label for="color">Favorite Color:</label>
         <input type="color" id="color" name="color" />
       </div>
 
       <div class="form-group">
-        <label for="select">Select Input:</label>
-        <select id="select" name="select">
-          <option value="">Select an option</option>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+        <label for="select">Reason for Contacting Us:</label>
+        <select id="select" name="reason">
+          <option value="">Select a reason</option>
+          <option value="option1">Product Inquiry</option>
+          <option value="option2">Support</option>
+          <option value="option3">Feedback</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="textarea">Textarea Input:</label>
+        <label for="textarea">Additional Comments:</label>
         <textarea
           id="textarea"
-          name="textarea"
+          name="comments"
           rows="4"
-          placeholder="Enter additional information"
+          placeholder="Enter any additional information"
         ></textarea>
       </div>
 
       <div class="form-group">
-        <label for="checkbox">Checkbox Input:</label>
-        <input type="checkbox" id="checkbox" name="checkbox" /> Check me
+        <label for="checkbox">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="checkbox" name="subscribe" /> Yes, subscribe
+        me
       </div>
 
       <div class="form-group">
-        <label for="radio">Radio Input:</label>
-        <input type="radio" id="radio1" name="radio" value="option1" /> Option
-        1<br />
-        <input type="radio" id="radio2" name="radio" value="option2" /> Option 2
+        <label for="radio">Preferred Contact Method:</label>
+        <input type="radio" id="radio1" name="contact" value="email" />
+        Email<br />
+        <input type="radio" id="radio2" name="contact" value="phone" /> Phone
       </div>
 
       <div class="form-group">

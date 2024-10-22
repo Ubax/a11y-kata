@@ -1,15 +1,10 @@
 # 2. Accessibility tools
 
-TODO: Rewrite the introduction
-
-In this part of the kata you will learn how to use tools that:
-
-- simulate different types of disabilities
-- are used daily by people with disabilities
+In this part of the kata, you'll explore essential tools for improving and testing website accessibility.
 
 ## Tasks
 
-There are six sections in this part of the kata:
+There are seven sections in this part of the kata:
 
 - [2.1 - automated testing tools](./2.1-automated-testing.md)
 - [2.2 - manual testing tools](./2.2-manual-testing.md)
@@ -26,7 +21,3 @@ There are six sections in this part of the kata:
 
 - [form.html](./assets/form.html)
 - [Wikipedia.html](./assets/Wikipedia.html)
-
-## More resources
-
-Work in progress
