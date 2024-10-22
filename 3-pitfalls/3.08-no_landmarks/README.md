@@ -1,16 +1,16 @@
-# 4.8. No Landmarks
+# 3.8. No Landmarks
 
 In this exercise, your goal is to improve the **HTML structure** of the page _before.html_.
 
-- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.08-no_landmarks/before.html)
-- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.08-no_landmarks/before.html)
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/3-pitfalls/3.08-no_landmarks/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/3-pitfalls/3.08-no_landmarks/before.html)
 - [source code](./before.html)
 
 You can compare your solution with the [after.html](after.html) file.
 
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
-- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.08-no_landmarks/after-problem-1.html)
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.08-no_landmarks/after-problem-1.html)
 
 ## Hints
 

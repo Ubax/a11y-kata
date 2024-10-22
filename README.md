@@ -3,9 +3,8 @@
 This repository contains a kata designed to provide a basic understanding of accessibility. The exercises are divided into four parts:
 
 - [Part 1 - Introduction](./1-introduction/README.md): A short presentation introducing the topic of accessibility.
-- [Part 2 - Tools](./2-tools/README.md): Exercises to help you become familiar with the tools used by people with disabilities.
-- [Part 3 - Testing](./3-testing/README.md): Exercises focused on accessibility testing.
-- [Part 4 - Pitfalls](./4-pitfalls/README.md): Exercises highlighting common accessibility pitfalls.
+- [Part 2 - Tools & Testing](./2-tools-and-testing/README.md): Exercises to help you become familiar with: testing tools and supporting assistive technologies.
+- [Part 3 - Pitfalls](./3-pitfalls/README.md): Exercises highlighting common accessibility pitfalls.
 
 ## How to Use This Repository
 
@@ -14,13 +13,15 @@ This repository is intended for self-paced learning. You can explore the exercis
 The recommended order for completing the exercises is:
 
 1. Start with the introduction slide deck.
-2. Complete the first two exercises in the tools section:
-   - 2.1 - Keyboard Navigation
-   - 2.2 - Screen Reader
-3. Move on to the testing exercises.
-4. Continue with the pitfalls exercises.
-5. (Optional, if time allows) Complete the remaining tool exercises.
-6. (Optional, if time allows) Explore the resources section(s) for further information.
+2. Complete the first five exercises in the tools section:
+   - 2.1. Automated Testing Tools
+   - 2.2. Manual Testing Tools
+   - 2.3. Keyboard Navigation
+   - 2.4. Screen Readers
+   - 2.5. Disability Simulators
+3. Move on to pitfalls exercises.
+4. (Optional, if time allows) Complete the remaining tool exercises.
+5. (Optional, if time allows) Explore the resources section(s) for further information.
 
 ## Completing in a group
 

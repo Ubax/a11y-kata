@@ -1,18 +1,18 @@
-# 4.9. Dialogs & Popups
+# 3.9. Dialogs & Popups
 
 In this exercise, your goal is to improve the accessibility of the **dialogs** on the page _before.html_.
 
-- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/before.html)
-- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.09-dialog_popups/before.html)
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/3-pitfalls/3.09-dialog_popups/before.html)
 - [source code](./before.html)
 
 You can compare your solutions with the provided examples in [after-1.html](after-1.html) and [after-2.html](after-2.html). There is also a final solution that fixes all issues.
 
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
-- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-1.html)
-- [Solution after problem 2](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-2.html)
-- [Solution after problem 3](https://ubax.github.io/a11y-kata/4-pitfalls/4.09-dialog_popups/after-problem-3.html)
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-1.html)
+- [Solution after problem 2](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-2.html)
+- [Solution after problem 3](https://ubax.github.io/a11y-kata/3-pitfalls/3.09-dialog_popups/after-problem-3.html)
 
 ## Hints
 
