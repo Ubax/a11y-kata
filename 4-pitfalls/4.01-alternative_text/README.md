@@ -1,17 +1,17 @@
-# 4.1. Alternative Text
+# 3.1. Alternative Text
 
 In this exercise, your task is to improve the accessibility of the **images** on the page _before.html_.
 
-- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/4-pitfalls/4.01-alternative_text/before.html)
-- [https://localhost:8000/.../before.html](http://localhost:8000/4-pitfalls/4.01-alternative_text/before.html)
+- [https://ubax.github.io/.../before.html](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/before.html)
+- [https://localhost:8000/.../before.html](http://localhost:8000/3-pitfalls/3.01-alternative_text/before.html)
 - [Source code](./before.html)
 
 You can refer to the [after.html](after.html) file to compare your solutions.
 
 If you prefer not to solve the problems yourself, you can use the solution files to explore how each issue was fixed and look for any remaining problems:
 
-- [Solution after problem 1](https://ubax.github.io/a11y-kata/4-pitfalls/4.01-alternative_text/after-problem-1.html)
-- [Solution after problem 2](https://ubax.github.io/a11y-kata/4-pitfalls/4.01-alternative_text/after-problem-2.html)
+- [Solution after problem 1](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/after-problem-1.html)
+- [Solution after problem 2](https://ubax.github.io/a11y-kata/3-pitfalls/3.01-alternative_text/after-problem-2.html)
 
 ## Hints
 

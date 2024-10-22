@@ -4,7 +4,7 @@ This repository contains a kata designed to provide a basic understanding of acc
 
 - [Part 1 - Introduction](./1-introduction/README.md): A short presentation introducing the topic of accessibility.
 - [Part 2 - Tools & Testing](./2-tools-and-testing/README.md): Exercises to help you become familiar with: testing tools and supporting assistive technologies.
-- [Part 4 - Pitfalls](./4-pitfalls/README.md): Exercises highlighting common accessibility pitfalls.
+- [Part 3 - Pitfalls](./3-pitfalls/README.md): Exercises highlighting common accessibility pitfalls.
 
 ## How to Use This Repository
 
