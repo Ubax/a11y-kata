@@ -1,4 +1,4 @@
-# 4. Pitfalls for Developers and Designers
+# 3. Pitfalls for Developers and Designers
 
 In this section, you'll explore common accessibility pitfalls that developers and designers often encounter when building websites. You'll learn how to identify these issues, avoid them, and how to fix them.
 
