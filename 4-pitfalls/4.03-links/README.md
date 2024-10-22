@@ -19,7 +19,7 @@ If you prefer not to solve the problems yourself, you can use the solution files
 
 Disable colors in your browser and try to identify the links.
 
-Refer to [2.3 Disability simulation - Color blindness](../../2-tools/2.3-disability-simulation.md#exercise-1-simulating-color-blindness) for instructions on how to disable colors in the browser.
+Refer to [2.5 Disability simulation - Color blindness](../../2-tools/2.5-disability-simulation.md#exercise-1-simulating-color-blindness) for instructions on how to disable colors in the browser.
 
 </details>
 
